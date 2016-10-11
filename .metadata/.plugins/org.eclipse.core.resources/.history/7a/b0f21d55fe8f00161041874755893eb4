@@ -1,17 +1,13 @@
 package vacuum;
 
-import room.Room;
-
 public class Vacuum {
 	int storage = 50;
 	int batteryLife = 100;
 	String name;
-	Room room;
 	
 	
-	public Vacuum(String name, Room room){
+	public Vacuum(String name){
 		this.name = name;
-		this.room = room;
 	}
 	
 	

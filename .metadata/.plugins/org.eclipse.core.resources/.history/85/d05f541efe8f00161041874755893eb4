@@ -1,0 +1,11 @@
+package room;
+
+import java.util.ArrayList;
+
+public class Room {
+	
+	
+	ArrayList<ThingsInRoom> yAxis = new ArrayList<ThingsInRoom>();
+	ArrayList<ThingsInRoom> xAxis = new ArrayList<ThingsInRoom>();
+	
+}

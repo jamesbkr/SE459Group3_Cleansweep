@@ -1,5 +1,4 @@
 package main;
-import room.Room;
 import vacuum.*;
 
 
@@ -7,10 +6,10 @@ public class RunVacuum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			Vacuum firstVacuum = new Vacuum("henry", new Room());
+			Vacuum firstVacuum = new Vacuum("henry");
 			
 			
-			System.out.println(firstVacuum.toString());
+			println(firstVacuum.toString());
 	}
 
 }
