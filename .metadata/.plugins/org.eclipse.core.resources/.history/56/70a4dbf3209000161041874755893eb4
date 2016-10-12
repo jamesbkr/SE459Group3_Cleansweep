@@ -1,0 +1,12 @@
+package room;
+
+public class CleanedRoom implements Area {
+
+	public void updateLocation(ThingsInRoom x, int y, int z) {
+		
+		
+	}
+
+
+
+}

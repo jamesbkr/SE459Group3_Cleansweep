@@ -1,0 +1,8 @@
+package room;
+
+import java.util.List;
+
+public class Area {
+	public void updateLocation(ThingsInRoom x, int y, int z);
+	List<List<ThingsInRoom>>() room;
+}

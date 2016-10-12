@@ -1,5 +1,7 @@
 package sensor;
 
+
+//factory for building different sensors.
 public class SensorFactory {
 	public Sensor buildRightSensor(){
 		

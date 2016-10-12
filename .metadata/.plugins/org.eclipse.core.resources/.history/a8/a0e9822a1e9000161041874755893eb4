@@ -1,0 +1,80 @@
+package vacuum;
+
+import room.Room;
+import room.ThingsInRoom;
+import sensor.Sensor;
+import sensor.SensorFactory;
+
+public class Vacuum {
+	int storage = 50;
+	int batteryLife = 100;
+	String name;
+	Room room;
+	int[] currentLocation = {0,0};
+	
+	//Sensors and Sensor Array to add more sensors just add them to array
+	Sensor rightSensor;
+	Sensor leftSensor;
+	Sensor backSensor;
+	Sensor frontSensor;
+	
+	Sensor[] sensorArray = {rightSensor,leftSensor,backSensor,frontSensor};
+	
+	SensorFactory sensorBuilder; 
+	
+	public Vacuum(String name, Room room){
+		this.name = name;
+		this.room = room;
+		sensorBuilder = new SensorFactory();
+		rightSensor = sensorBuilder.buildFrontSensor();
+		leftSensor = sensorBuilder.buildLeftSensor();
+		backSensor = sensorBuilder.buildBackSensor();
+		frontSensor = sensorBuilder.buildFrontSensor();
+		
+		
+	}
+	
+	public void run(){
+		this.move();
+	}
+	
+	
+	
+	private int checkStorage(){
+		return this.storage;
+	}
+
+	private void move(){
+		do{
+			
+			
+			//Update Sensors
+			for(Sensor i :sensorArray){
+				i.sense();
+			}
+			
+			
+			
+			if(front != ThingsInRoom.OBSTACLE){
+				center = front; 
+					
+			}
+			
+		}while((checkStorage() < 50));
+		
+		returnToBase();
+		
+		}
+		
+		
+	
+
+	private void returnToBase() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public String toString(){
+		return "HELLO FROM " +  this.name;
+	}
+}

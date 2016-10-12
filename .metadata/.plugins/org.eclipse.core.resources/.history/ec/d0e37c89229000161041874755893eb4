@@ -1,0 +1,125 @@
+package vacuum;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+ * 
+ * VACUUM CLASS
+ * The vacuum is aware of the room it is in and positions on all 4 sides of it.  
+ * 
+ * 
+ */
+
+
+import room.Room;
+import room.ThingsInRoom;
+import sensor.Sensor;
+import sensor.SensorFactory;
+
+public class Vacuum {
+	
+	//General variables for the vacuum
+	int storage = 50;
+	int batteryLife = 100;
+	String name;
+	
+	//The room that is being searched
+	Room room;
+	Room CleanedRoom;
+	int[] currentLocation = {0,0};
+	
+	
+	
+	//Setup the things that the Rumba is aware of in the room.
+	ThingsInRoom front = ThingsInRoom.NOTHING;
+	ThingsInRoom back = ThingsInRoom.NOTHING;
+	ThingsInRoom left = ThingsInRoom.NOTHING;
+	ThingsInRoom right = ThingsInRoom.NOTHING;
+	ThingsInRoom[] thingsArray = {right,left,back,front};
+	
+	ThingsInRoom center = ThingsInRoom.BASE;
+
+	//Sensors and Sensor Array to add more sensors just add them to array
+	Sensor rightSensor;
+	Sensor leftSensor;
+	Sensor backSensor;
+	Sensor frontSensor;	
+	Sensor[] sensorArray = {rightSensor,leftSensor,backSensor,frontSensor};
+	
+	//Sensor Factory to build sensors
+	SensorFactory sensorBuilder; 
+	
+	//constructor
+	public Vacuum(String name, Room room){
+		this.name = name;
+		this.room = new Room(room);
+		this.CleanedRoom = room;
+		
+		
+		for( List<ThingsInRoom> T : CleanedRoom.room){
+			for(int x=0; x <= T.size(); x++){
+				T.set(x,ThingsInRoom.DIRTY);
+			}
+		}
+		
+		
+		sensorBuilder = new SensorFactory();
+		rightSensor = sensorBuilder.buildFrontSensor();
+		leftSensor = sensorBuilder.buildLeftSensor();
+		backSensor = sensorBuilder.buildBackSensor();
+		frontSensor = sensorBuilder.buildFrontSensor();	
+	}
+	
+	
+	//how to run the vacuum.
+	public void run(){
+		this.move();
+	}
+	
+	
+	//Function to check the amount that is in the vacuum.
+	private int checkStorage(){
+		return this.storage;
+	}
+
+	
+	// Move the vacuum
+	private void move(){
+	
+			
+			
+			//Update Sensors
+			for(int i=0;i<=3;i++){
+				thingsArray[i] = sensorArray[i].sense();
+			}
+			
+			
+			
+			if(front != ThingsInRoom.OBSTACLE){
+				
+				
+				center = front; 
+					
+			}
+			
+
+		
+		}
+		
+		
+	
+	//Return to base function.  This will be called when the vacuum is filled.  
+	//Then need to be changed to be induced when the vacuum is running out of battery.
+	private void returnToBase() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	//To String function
+	public String toString(){
+		return "HELLO FROM " +  this.name;
+	}
+}

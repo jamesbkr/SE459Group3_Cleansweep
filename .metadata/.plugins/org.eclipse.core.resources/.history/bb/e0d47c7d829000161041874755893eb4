@@ -1,0 +1,14 @@
+package room;
+
+public class RoomStatus {
+	ThingsInRoom typeOfFloor;
+	ThingsInRoom isClean;
+	
+	
+	public RoomStatus(ThingsInRoom a,ThingsInRoom b){
+		typeOfFloor = a;
+		isClean = b;
+	}
+	
+
+}

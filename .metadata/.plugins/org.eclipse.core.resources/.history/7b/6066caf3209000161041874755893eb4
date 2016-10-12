@@ -1,0 +1,7 @@
+package room;
+
+public class CleanedRoom implements Area {
+
+
+
+}
