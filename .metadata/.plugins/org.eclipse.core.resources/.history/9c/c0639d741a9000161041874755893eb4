@@ -1,0 +1,22 @@
+package sensor;
+
+public class SensorFactory {
+	public Sensor buildRightSensor(){
+		
+		return new RightSensor();
+	};
+	
+	public Sensor buildLeftSensor(){
+		
+	}
+	
+	public Sensor buildBackSensor(){
+		
+		return null
+	};
+	
+	public Sensor buildFrontSensor(){
+		
+	}
+	
+}
