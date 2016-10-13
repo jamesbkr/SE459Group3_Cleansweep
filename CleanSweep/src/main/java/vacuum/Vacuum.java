@@ -102,10 +102,13 @@ public class Vacuum {
 	
 	
 	//Function to check the amount that is in the vacuum.
-	private int checkStorage(){
+	public int checkStorage(){
 		return this.storage;
 	}
-
+	// Function to check amount of batterlife in the vacuum
+	public int checkBatteryLife(){
+		return this.batteryLife;
+	}
 	
 	// Move the vacuum
 	//this is a recursive function.  

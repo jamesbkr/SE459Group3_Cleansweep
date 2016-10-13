@@ -18,6 +18,12 @@ public class RunVacuum {
 			
 			
 			System.out.println(firstVacuum.toString());
-	}
+			
+			int storage = firstVacuum.checkStorage();
+			System.out.println(firstVacuum.checkStorage());
+			
+			int batterlife= firstVacuum.checkBatteryLife();
+			System.out.println(firstVacuum.checkBatteryLife());
+	}		
 
 }

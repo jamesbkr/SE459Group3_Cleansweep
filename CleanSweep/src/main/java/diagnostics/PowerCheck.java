@@ -1,4 +1,4 @@
-package Diagnostics;
+package diagnostics;
 import vacuum.*;
 
 public class PowerCheck {
