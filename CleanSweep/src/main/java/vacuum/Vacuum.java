@@ -109,6 +109,10 @@ public class Vacuum {
 	public int checkBatteryLife(){
 		return this.batteryLife;
 	}
+	// Function to check Sensor Array
+	public Sensor[] checkSensor(){
+		return this.sensorArray;
+	}
 	
 	// Move the vacuum
 	//this is a recursive function.  

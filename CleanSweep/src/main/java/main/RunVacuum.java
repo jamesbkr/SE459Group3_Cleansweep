@@ -13,14 +13,16 @@ import diagnostics.*;
 public class RunVacuum {
 
 	public static void main(String[] args) {
+			ArrayList<String> powerLog= new ArrayList<String>();
+			ArrayList<String> storageLog= new ArrayList<String>();
 		
 			Vacuum firstVacuum = new Vacuum("henry", new HashMap<Point, RoomStatus>());
 			
-			
 			System.out.println(firstVacuum.toString());
 			
-			PowerCheck.Diagnostic(firstVacuum);
-			StorageCheck.Diagnostic(firstVacuum);
+			
+			powerLog.add(PowerCheck.PowerCheck(firstVacuum));
+			storageLog.add(StorageCheck.Diagnostic(firstVacuum));
 			
 	}		
 
