@@ -1,0 +1,26 @@
+package room;
+
+public class Point {
+	int x;
+	int y;
+	
+	public Point(int a, int b){
+		x = a;
+		y = b;
+	}
+	
+	
+	public int getX(){
+		return x;
+	}
+	
+	public int getY(){
+		return y;
+	}
+	
+	public String ToString(){
+		return "point is " +x + " "+y;		
+	}
+	
+	
+}

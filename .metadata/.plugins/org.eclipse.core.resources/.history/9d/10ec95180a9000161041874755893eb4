@@ -1,0 +1,6 @@
+package room;
+
+public interface Area {
+	public void updateLocation(){};
+	public void addLocation(){};
+}

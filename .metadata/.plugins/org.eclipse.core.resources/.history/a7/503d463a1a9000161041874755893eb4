@@ -1,0 +1,5 @@
+package sensor;
+
+public interface SensorFactory {
+	public Sensor build();
+}
