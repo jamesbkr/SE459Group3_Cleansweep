@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PointTest" project="CleanSweep" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="room.PointTest" time="0.0">
+    <testcase name="testToString" classname="room.PointTest" time="0.0"/>
+    <testcase name="testNullEquals" classname="room.PointTest" time="0.0"/>
+    <testcase name="testGetPoints" classname="room.PointTest" time="0.0"/>
+  </testsuite>
+</testrun>
