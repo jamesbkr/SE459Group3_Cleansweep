@@ -50,7 +50,7 @@ public class Vacuum {
 	Sensor leftSensor;
 	Sensor backSensor;
 	Sensor frontSensor;	
-	Sensor[] sensorArray = {rightSensor,leftSensor,backSensor,frontSensor};
+	public Sensor[] sensorArray ;
 	
 	//Sensor Factory to build sensors
 	SensorFactory sensorBuilder; 
@@ -89,6 +89,10 @@ public class Vacuum {
 		leftSensor = sensorBuilder.buildLeftSensor();
 		backSensor = sensorBuilder.buildBackSensor();
 		frontSensor = sensorBuilder.buildFrontSensor();	
+		this.sensorArray =new Sensor[] 	{rightSensor, 
+		                              leftSensor , 
+		                              backSensor, 
+		                              frontSensor} ;
 	}
 	
 	
@@ -100,6 +104,9 @@ public class Vacuum {
 		this.move();
 	}
 	
+	public Point getCurrentLocation(){
+		return this.currentLocation;
+	}
 	
 	//Function to check the amount that is in the vacuum.
 	public int checkStorage(){

@@ -1,0 +1,19 @@
+package vacuum;
+
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+public class VacuumTest {
+
+	Vacuum v = new Vacuum("harry");
+	
+	@Test 
+	public void storageCheck(){
+		assertEquals(100,v.checkBatteryLife());
+		v.batteryLife -= 1;
+		assertEquals(99,v.checkBatteryLife());
+		
+	}
+	
+}
