@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VacuumTest" project="CleanSweep" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="vacuum.VacuumTest" time="0.018">
+    <testcase name="cuurrentLocation" classname="vacuum.VacuumTest" time="0.017"/>
+    <testcase name="batteryCheck" classname="vacuum.VacuumTest" time="0.001"/>
+    <testcase name="stringTest" classname="vacuum.VacuumTest" time="0.0"/>
+    <testcase name="checkLocation" classname="vacuum.VacuumTest" time="0.0"/>
+    <testcase name="checkSensorCheck" classname="vacuum.VacuumTest" time="0.0"/>
+    <testcase name="testShutdown" classname="vacuum.VacuumTest" time="0.0"/>
+    <testcase name="storageCheck" classname="vacuum.VacuumTest" time="0.0"/>
+    <testcase name="testReturn" classname="vacuum.VacuumTest" time="0.0"/>
+  </testsuite>
+</testrun>

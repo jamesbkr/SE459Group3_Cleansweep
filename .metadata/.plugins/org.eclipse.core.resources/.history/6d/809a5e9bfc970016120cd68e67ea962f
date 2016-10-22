@@ -13,11 +13,11 @@ public class RoomStatus {
 	}
 	
 	public CleanRoom getIsClean(){
-		return this.isClean;
+		return isClean;
 	}
 	
 	public ThingsInRoom getTypeOfFloor(){
-		return this.typeOfFloor;
+		return typeOfFloor;
 		
 	}
 	

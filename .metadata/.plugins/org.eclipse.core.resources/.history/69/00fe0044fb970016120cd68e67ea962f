@@ -1,0 +1,38 @@
+package room;
+import static org.junit.Assert.*;
+import org.junit.*;
+public class roomTest {
+	
+	Room r = new Room();
+	
+	
+	@Test
+	public void updateRoomTest(){
+		r.getRoom().put(new Point(0,0),new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));	
+		assertTrue(r.getRoom().keySet().size() == 1);
+	}
+	
+	@Test
+	public void getRoomTest(){
+		Room g = r;
+		
+		assertEquals(g.getRoom(),r.getRoom());
+		
+	}
+	
+	@Test
+	public void checkPointTest(){
+		assertEquals(CleanRoom.CLEAN, r.getRoom().get(new Point(0,0)).getIsClean());
+		
+	}
+	
+	@Test
+	public void checkthingTest(){
+		assertEquals(ThingsInRoom.BASE, r.checkTypeOfFloor(new Point(0,0)));
+		
+	}
+	
+	
+	
+
+}
