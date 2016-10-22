@@ -24,6 +24,7 @@ public class RoomSimulator {
 				 r = ThingsInRoom.BASE;
 				do{
 					r = x.random();
+				
 				}while(r.equals(ThingsInRoom.BASE));
 				
 				if(r.equals(ThingsInRoom.NOTHING)){

@@ -100,34 +100,15 @@ public class SwingAnimatorBuilder implements AnimatorBuilder {
 		public void paint(Graphics g){
 			
 			for (Element<Point> e : Points ){
-			
+			g.setColor(Color.RED);
 				if(e.rs.getTypeOfFloor()== ThingsInRoom.OBSTACLE){
-					g.setColor(Color.DARK_GRAY);
-					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
-				}
-				else if(e.rs.getTypeOfFloor()==ThingsInRoom.NOTHING){
 					g.setColor(Color.BLACK);
-					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
+					XGraphics.fillRect(g,e.t,e.x.getX()*5.0,e.x.getY()*5.0,5,5);
 				}
-				else if(e.rs.getTypeOfFloor()==ThingsInRoom.BASE){
-					g.setColor(Color.RED);
-					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
-				}
-				else if(e.rs.getTypeOfFloor()==ThingsInRoom.BAREFLOOR){
-					g.setColor(Color.WHITE);
-					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
-				}
-				else if(e.rs.getTypeOfFloor()==ThingsInRoom.LOWPILE){
-					g.setColor(Color.LIGHT_GRAY);
-					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
-				}
-				else if(e.rs.getTypeOfFloor()==ThingsInRoom.HIGHPILE){
-					g.setColor(Color.GRAY);
-					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
-				}
-			}
-			//XGraphics.fillRect(g,e.t,e.x.getX()*25.0,e.x.getY()*25.0,25,25);
+				else if()
 			
+			XGraphics.fillRect(g,e.t,e.x.getX()*25.0,e.x.getY()*25.0,25,25);
+			}
 			
 		}
 //		private List<Element<Road>> roadElements;

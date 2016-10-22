@@ -30,6 +30,8 @@ public class Model extends Observable {
 	
 	private void setup(AnimatorBuilder builder, HashMap<Point,RoomStatus> r){
 		for(Point p : r.keySet()){
+			System.out.println(p.ToString()+ " ???");
+			
 			builder.addLocation(p, r.get(p));
 			
 			

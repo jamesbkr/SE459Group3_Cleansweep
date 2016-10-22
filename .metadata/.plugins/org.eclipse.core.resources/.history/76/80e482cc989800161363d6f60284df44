@@ -114,15 +114,15 @@ public class SwingAnimatorBuilder implements AnimatorBuilder {
 					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
 				}
 				else if(e.rs.getTypeOfFloor()==ThingsInRoom.BAREFLOOR){
-					g.setColor(Color.WHITE);
-					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
-				}
-				else if(e.rs.getTypeOfFloor()==ThingsInRoom.LOWPILE){
 					g.setColor(Color.LIGHT_GRAY);
 					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
 				}
-				else if(e.rs.getTypeOfFloor()==ThingsInRoom.HIGHPILE){
+				else if(e.rs.getTypeOfFloor()==ThingsInRoom.LOWPILE){
 					g.setColor(Color.GRAY);
+					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
+				}
+				else if(e.rs.getTypeOfFloor()==ThingsInRoom.HIGHPILE){
+					g.setColor(Color.DARK_GRAY);
 					XGraphics.fillRect(g,e.t,e.x.getX()*50.0,e.x.getY()*50.0,50,50);
 				}
 			}
