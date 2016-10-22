@@ -52,7 +52,7 @@ public class VacuumTest {
 	@Test
 	public void checkSensorCheck(){
 		
-		assertTrue(v.sensorArray == v.checkSensor());
+		assertTrue(v.sensorArra== v.checkSensor());
 		
 	}
 	

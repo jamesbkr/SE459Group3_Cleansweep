@@ -185,15 +185,15 @@ public class Vacuum {
 	
 	//Return to base function.  This will be called when the vacuum is filled.  
 	//Then need to be changed to be induced when the vacuum is running out of battery.
-	public Point returnToBase() {
+	private Point returnToBase() {
 		// TODO Auto-generated method stub
 		return new Point(0,0);
 	}
 	
 	
-	public Point shutDown(Point p){
+	private void shutDown(Point p){
 		System.out.println("THERE IS NO WHER TO GO>   SHUTTING DOWN at location " +p.toString());
-		return p;
+		System.exit(4);
 	}
 	
 	

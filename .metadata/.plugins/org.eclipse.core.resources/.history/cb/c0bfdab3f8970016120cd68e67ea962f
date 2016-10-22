@@ -193,7 +193,7 @@ public class Vacuum {
 	
 	public Point shutDown(Point p){
 		System.out.println("THERE IS NO WHER TO GO>   SHUTTING DOWN at location " +p.toString());
-		return p;
+		return new Point(0,0);
 	}
 	
 	

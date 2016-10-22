@@ -35,12 +35,14 @@ public class RunVacuum {
 							case 1:
 			
 								room = rmSim.makeRoom(rmSim.getRoomSize(scn));
+								//f = console(scn);
 								continue;
 			
 							case 2:
 								System.out.println("NOTE: if you haven't build a room yet then the default 10X10 room will be used");
 								Vacuum V = new Vacuum("henry",room);
-								V.run();							
+								V.run();
+								//f = console(scn);
 								continue;
 							case 3:
 								System.out.println("Good Bye!");

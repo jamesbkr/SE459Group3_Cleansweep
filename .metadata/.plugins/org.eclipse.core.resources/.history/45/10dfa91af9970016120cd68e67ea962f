@@ -49,13 +49,6 @@ public class VacuumTest {
 		
 	}
 	
-	@Test
-	public void checkSensorCheck(){
-		
-		assertTrue(v.sensorArray == v.checkSensor());
-		
-	}
-	
 	@Test 
 	public void stringTest(){
 		assertEquals("HELLO FROM harry",v.toString());

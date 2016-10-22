@@ -191,9 +191,9 @@ public class Vacuum {
 	}
 	
 	
-	public Point shutDown(Point p){
+	private void shutDown(Point p){
 		System.out.println("THERE IS NO WHER TO GO>   SHUTTING DOWN at location " +p.toString());
-		return p;
+		System.exit(4);
 	}
 	
 	

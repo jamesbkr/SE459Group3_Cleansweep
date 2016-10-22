@@ -21,14 +21,6 @@ public class VacuumTest {
 		assertEquals(p,v.returnToBase());
 	}
 	
-	@Test
-	public void testShutdown(){
-		
-		assertEquals(p,v.shutDown(p));
-	}
-	
-	
-	
 	@Test 
 	public void storageCheck(){
 		assertEquals(100,v.checkBatteryLife());
@@ -46,13 +38,6 @@ public class VacuumTest {
 	@Test
 	public void checkLocation(){
 		assertEquals(new Point(0,0),v.getCurrentLocation());
-		
-	}
-	
-	@Test
-	public void checkSensorCheck(){
-		
-		assertTrue(v.sensorArray == v.checkSensor());
 		
 	}
 	

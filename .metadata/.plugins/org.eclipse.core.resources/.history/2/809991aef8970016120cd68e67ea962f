@@ -24,7 +24,7 @@ public class VacuumTest {
 	@Test
 	public void testShutdown(){
 		
-		assertEquals(p,v.shutDown(p));
+		assertEquals(p,v.shutDown());
 	}
 	
 	
@@ -46,13 +46,6 @@ public class VacuumTest {
 	@Test
 	public void checkLocation(){
 		assertEquals(new Point(0,0),v.getCurrentLocation());
-		
-	}
-	
-	@Test
-	public void checkSensorCheck(){
-		
-		assertTrue(v.sensorArray == v.checkSensor());
 		
 	}
 	
