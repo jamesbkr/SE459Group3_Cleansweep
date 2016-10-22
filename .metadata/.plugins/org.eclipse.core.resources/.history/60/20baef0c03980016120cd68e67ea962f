@@ -103,8 +103,6 @@ public class Vacuum {
 	//how to run the vacuum.
 	public void run(){
 		System.out.println(room.toString());
-		
-		//move();
 	}
 	
 	public Point getCurrentLocation(){
@@ -124,22 +122,11 @@ public class Vacuum {
 		return this.sensorArray;
 	}
 	
-	
-	private Point getNextMove(Point p){
-		
-		
-		
-		
-		
-		
-		return new Point(0,0);
-	}
-	
 	// Move the vacuum
 	//this is a recursive function.  
 	private void move(){
 	
-			Point nextPoint = getNextMove(this.currentLocation);
+
 			
 			//Update Sensors
 			for(int i=0;i<=3;i++){

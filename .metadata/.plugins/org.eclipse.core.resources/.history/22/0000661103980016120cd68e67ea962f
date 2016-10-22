@@ -102,9 +102,7 @@ public class Vacuum {
 	
 	//how to run the vacuum.
 	public void run(){
-		System.out.println(room.toString());
-		
-		//move();
+		move();
 	}
 	
 	public Point getCurrentLocation(){
@@ -132,7 +130,7 @@ public class Vacuum {
 		
 		
 		
-		return new Point(0,0);
+		return New Point(0,0);
 	}
 	
 	// Move the vacuum

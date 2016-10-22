@@ -25,7 +25,7 @@ public class RoomSimulator {
 					r = x.random();
 				
 				}while(r==ThingsInRoom.BASE);
-				RoomStatus rs = new RoomStatus(r,CleanRoom.DIRTY);
+				RoomStatus rs = new RoomStatus(x.random(),CleanRoom.DIRTY);
 				
 				room.put(p,rs);
 				
