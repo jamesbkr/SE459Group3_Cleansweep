@@ -4,15 +4,15 @@ package room;
 //Room status object to tell what is at that location and if it is clean or not.
 public class RoomStatus {
 	ThingsInRoom typeOfFloor;
-	ThingsInRoom isClean;
+	CleanRoom isClean;
 	
 	
-	public RoomStatus(ThingsInRoom a,ThingsInRoom b){
+	public RoomStatus(ThingsInRoom a,CleanRoom b){
 		typeOfFloor = a;
 		isClean = b;
 	}
 	
-	public ThingsInRoom getIsClean(){
+	public CleanRoom getIsClean(){
 		return isClean;
 	}
 	
@@ -21,5 +21,8 @@ public class RoomStatus {
 		
 	}
 	
+	public String toString(){
+		return "[type: "+typeOfFloor.toString() + ","+ isClean.toString()+"]";
+	}
 
 }

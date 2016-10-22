@@ -1,0 +1,7 @@
+package room;
+
+public enum CleanRoom {
+	
+		DIRTY, CLEAN
+	
+}

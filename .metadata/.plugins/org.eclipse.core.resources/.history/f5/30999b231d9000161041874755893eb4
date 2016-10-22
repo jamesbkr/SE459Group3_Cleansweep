@@ -1,6 +1,0 @@
-package room;
-
-public interface Area {
-	public void updateLocation(ThingsInRoom x, int y, int z);
-	private void addLocation(ThingsInRoom x, int y, int z);
-}

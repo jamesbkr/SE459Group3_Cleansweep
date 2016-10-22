@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import room.CleanRoom;
 import room.Point;
 
 /*
@@ -61,7 +62,7 @@ public class Vacuum {
 		this.room = new Room(room);
 		
 		currentLocation = new Point(0,0);
-		this.room.updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,ThingsInRoom.CLEAN));
+		this.room.updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
 		
 		
 		sensorBuilder = new SensorFactory();
@@ -76,7 +77,7 @@ public class Vacuum {
 		this.name = name;
 		this.room = new Room();
 		currentLocation = new Point(0,0);
-		room.updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,ThingsInRoom.CLEAN));
+		room.updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
 		
 		
 /*		for(Point p : room.getRoom().keySet()){
@@ -101,7 +102,7 @@ public class Vacuum {
 	
 	//how to run the vacuum.
 	public void run(){
-		this.move();
+		System.out.println(room.toString());
 	}
 	
 	public Point getCurrentLocation(){
@@ -143,10 +144,10 @@ public class Vacuum {
 			
 			//updating the room to have the new point and the status of the room.  this status is set from the sensors and assumed to be dirty
 			//once the vacuum travels over the location, it will then decide if it is dirty or not using the downward sensor. 
-			room.updateLocation(FrontPoint, new RoomStatus(front,ThingsInRoom.DIRTY));
-			room.updateLocation(BackPoint, new RoomStatus(back,ThingsInRoom.DIRTY));
-			room.updateLocation(LeftPoint, new RoomStatus(right,ThingsInRoom.DIRTY));
-			room.updateLocation(RightPoint, new RoomStatus(left,ThingsInRoom.DIRTY));
+			room.updateLocation(FrontPoint, new RoomStatus(front,CleanRoom.DIRTY));
+			room.updateLocation(BackPoint, new RoomStatus(back,CleanRoom.DIRTY));
+			room.updateLocation(LeftPoint, new RoomStatus(right,CleanRoom.DIRTY));
+			room.updateLocation(RightPoint, new RoomStatus(left,CleanRoom.DIRTY));
 
 			
 			

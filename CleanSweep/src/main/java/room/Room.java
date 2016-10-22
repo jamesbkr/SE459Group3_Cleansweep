@@ -37,7 +37,7 @@ public class Room implements Area {
 
 	
 	//checks the point on the map if it is clean or not according to the room.
-	public ThingsInRoom checkPoint(Point p){
+	public CleanRoom checkPoint(Point p){
 		
 		return room.get(p).getIsClean();
 		
@@ -47,6 +47,20 @@ public class Room implements Area {
 	//Checks if the point is an obstacle or not.
 	public ThingsInRoom checkTypeOfFloor(Point p){
 		return room.get(p).getTypeOfFloor();
+	}
+	
+	
+	
+	
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		for(Point s : room.keySet()){
+			
+			sb.append(s.toString() + "  " + room.get(s).toString() + "\n" );
+			
+			
+		}
+		return sb.toString();
 	}
 	
 }

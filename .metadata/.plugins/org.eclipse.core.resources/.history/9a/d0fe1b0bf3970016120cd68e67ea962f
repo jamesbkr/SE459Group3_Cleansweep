@@ -1,0 +1,34 @@
+package room;
+
+
+//Enum for things in the room
+public enum ThingsInRoom {
+	OBSTACLE{
+		public String toString(){
+			return "obstacle";
+		}
+		
+	}, 
+	
+	BAREFLOOR{
+		public String toString(){
+			return "barefloor";
+		}
+	}, 
+	
+	LOWPILE{
+		{
+			public String toString(){
+				return "Lowpile";
+			}
+	},
+		
+	HIGHPILE{
+		{
+			public String toString(){
+				return "obstacle";
+			}
+		
+	}, BASE, NOTHING
+}
+
