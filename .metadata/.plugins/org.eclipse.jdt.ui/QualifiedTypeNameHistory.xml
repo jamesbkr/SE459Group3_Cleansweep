@@ -2,5 +2,12 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="room.Point"/>
 <fullyQualifiedTypeName name="vacuum.Vacuum"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+<fullyQualifiedTypeName name="room.CleanRoom"/>
+<fullyQualifiedTypeName name="simulator.RoomSimulator"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="room.ThingsInRoom"/>
+<fullyQualifiedTypeName name="room.RoomStatus"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

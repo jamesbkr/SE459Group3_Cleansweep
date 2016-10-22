@@ -31,7 +31,7 @@ public class Vacuum {
 	String name;
 	
 	//The room that is being searched
-	Room room;
+	private Room room;
 	Room CleanedRoom;
 	Point currentLocation;
 	
@@ -59,10 +59,10 @@ public class Vacuum {
 	//constructor
 	public Vacuum(String name,  HashMap<Point,RoomStatus> room){
 		this.name = name;
-		this.room = new Room(room);
+		this.setRoom(new Room(room));
 		
 		currentLocation = new Point(0,0);
-		this.room.updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
+		this.getRoom().updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
 		
 		
 		sensorBuilder = new SensorFactory();
@@ -75,9 +75,9 @@ public class Vacuum {
 	//constructor
 	public Vacuum(String name){
 		this.name = name;
-		this.room = new Room();
+		this.setRoom(new Room());
 		currentLocation = new Point(0,0);
-		room.updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
+		getRoom().updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
 		
 		
 /*		for(Point p : room.getRoom().keySet()){
@@ -102,7 +102,7 @@ public class Vacuum {
 	
 	//how to run the vacuum.
 	public void run(){
-		System.out.println(room.toString());
+		System.out.println(getRoom().toString());
 		
 		//move();
 	}
@@ -157,30 +157,30 @@ public class Vacuum {
 			
 			//updating the room to have the new point and the status of the room.  this status is set from the sensors and assumed to be dirty
 			//once the vacuum travels over the location, it will then decide if it is dirty or not using the downward sensor. 
-			room.updateLocation(FrontPoint, new RoomStatus(front,CleanRoom.DIRTY));
-			room.updateLocation(BackPoint, new RoomStatus(back,CleanRoom.DIRTY));
-			room.updateLocation(LeftPoint, new RoomStatus(right,CleanRoom.DIRTY));
-			room.updateLocation(RightPoint, new RoomStatus(left,CleanRoom.DIRTY));
+			getRoom().updateLocation(FrontPoint, new RoomStatus(front,CleanRoom.DIRTY));
+			getRoom().updateLocation(BackPoint, new RoomStatus(back,CleanRoom.DIRTY));
+			getRoom().updateLocation(LeftPoint, new RoomStatus(right,CleanRoom.DIRTY));
+			getRoom().updateLocation(RightPoint, new RoomStatus(left,CleanRoom.DIRTY));
 
 			
 			
 			//if the front is clear it goes forward.  if the not it looks left then right then back.  
 			//if all are not clear, it then initiates the shutdown protocal.
-			if((room.checkTypeOfFloor(FrontPoint)!=ThingsInRoom.OBSTACLE)){
+			if((getRoom().checkTypeOfFloor(FrontPoint)!=ThingsInRoom.OBSTACLE)){
 				currentLocation = FrontPoint;
 				
 				this.move();
 			}
-			else if( (room.checkTypeOfFloor(LeftPoint)!=ThingsInRoom.OBSTACLE)){
+			else if( (getRoom().checkTypeOfFloor(LeftPoint)!=ThingsInRoom.OBSTACLE)){
 				currentLocation = LeftPoint;
 				this.move();
 			}
-			else if( (room.checkTypeOfFloor(RightPoint)!=ThingsInRoom.OBSTACLE)){
+			else if( (getRoom().checkTypeOfFloor(RightPoint)!=ThingsInRoom.OBSTACLE)){
 				
 				currentLocation = RightPoint;
 				this.move();
 			}
-			else if((room.checkTypeOfFloor(BackPoint)!=ThingsInRoom.OBSTACLE)){
+			else if((getRoom().checkTypeOfFloor(BackPoint)!=ThingsInRoom.OBSTACLE)){
 				currentLocation = BackPoint;
 				
 				this.move();
@@ -214,5 +214,13 @@ public class Vacuum {
 	//To String function
 	public String toString(){
 		return "HELLO FROM " +  this.name;
+	}
+
+	public Room getRoom() {
+		return room;
+	}
+
+	public void setRoom(Room room) {
+		this.room = room;
 	}
 }

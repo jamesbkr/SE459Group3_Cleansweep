@@ -12,8 +12,10 @@ import room.Room;
 import room.RoomStatus;
 import room.ThingsInRoom;
 import simulator.RoomSimulator;
+import swing.SwingAnimatorBuilder;
 import vacuum.*;
 import diagnostics.*;
+import model.Model;
 //Main class to test running the vacuum
 public class RunVacuum {
 
@@ -40,7 +42,7 @@ public class RunVacuum {
 							case 2:
 								System.out.println("NOTE: if you haven't build a room yet then the default 10X10 room will be used");
 								Vacuum V = new Vacuum("henry",room);
-								V.run();							
+								Model m = new Model(V, new SwingAnimatorBuilder());							
 								continue;
 							case 3:
 								System.out.println("Good Bye!");
