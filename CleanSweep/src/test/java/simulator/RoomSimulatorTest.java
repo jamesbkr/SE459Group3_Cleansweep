@@ -20,5 +20,15 @@ public class RoomSimulatorTest {
 		assertTrue(room.size()>i.length);
 	}
 
-	
+	/* Placeholder work for roomsize
+	 @Test
+	 public void getRoomSizeTest(){
+	 int [] returnint = new[2];
+	 int x = 0
+	 int y= 0
+	 
+	 assertTrue();
+	 }
+	  
+	 */
 }
