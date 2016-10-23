@@ -17,6 +17,9 @@ public class RoomStatusTest {
 	}
 	
 	
-	
+	@Test
+	public void testtoString(){
+		assertEquals("[type: "+rs.typeOfFloor.toString() + ","+ rs.isClean.toString()+"]",rs.toString());
+	}
 	
 }
