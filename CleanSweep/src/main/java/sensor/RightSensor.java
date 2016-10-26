@@ -1,14 +1,13 @@
 package sensor;
 
+import room.Point;
+import room.Room;
 import room.ThingsInRoom;
 
 //Right sensor
-public class RightSensor implements Sensor {
+public class RightSensor extends Sensor {
 
-// Sense classs with fake return for the sensor data		
-	public ThingsInRoom sense() {
-		// TODO Auto-generated method stub
-		return ThingsInRoom.HIGHPILE;
-	}
-
+		public RightSensor(Room r){
+			super(r);
+		}
 }

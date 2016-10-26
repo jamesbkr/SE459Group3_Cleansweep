@@ -28,6 +28,10 @@ public class Model extends Observable {
 		disposed = true;
 	}
 	
+	public void run(){
+		V.run();
+	}
+	
 	private void setup(AnimatorBuilder builder, HashMap<Point,RoomStatus> r){
 		for(Point p : r.keySet()){
 			builder.addLocation(p, r.get(p));

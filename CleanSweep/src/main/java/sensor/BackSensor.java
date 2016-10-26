@@ -1,15 +1,14 @@
 package sensor;
 
-import room.ThingsInRoom;
+
+import room.Room;
+
 
 
 // Back Sensor 
-public class BackSensor implements Sensor {
-
-// Sense classs with fake return for the sensor data	
-	public ThingsInRoom sense() {
-		// TODO Auto-generated method stub
-		return ThingsInRoom.BAREFLOOR;
+public class BackSensor extends Sensor {
+	public BackSensor(Room r){
+		super(r);
 	}
 
 }
