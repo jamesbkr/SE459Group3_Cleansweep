@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="roomTest" project="CleanSweep" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="room.roomTest" time="0.001">
-    <testcase name="checkPointTest" classname="room.roomTest" time="0.001"/>
-    <testcase name="checkthingTest" classname="room.roomTest" time="0.0"/>
-    <testcase name="updateRoomTest" classname="room.roomTest" time="0.0"/>
-    <testcase name="getRoomTest" classname="room.roomTest" time="0.0"/>
-  </testsuite>
-</testrun>

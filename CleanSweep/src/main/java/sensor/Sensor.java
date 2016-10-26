@@ -1,9 +1,22 @@
 package sensor;
 
+import room.Point;
+import room.Room;
 import room.ThingsInRoom;
 
-public interface Sensor {
-	public ThingsInRoom sense();
+public class Sensor {
+	Room room;
+	
+	public Sensor(Room r){
+		room = r;
+		
+	}
+	
+	public ThingsInRoom sense(Point p){
+		
+		return room.getRoom().get(p).getTypeOfFloor();
+		
+	};
 	}
 	
 	

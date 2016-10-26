@@ -10,15 +10,15 @@ import vacuum.Vacuum;
 public class SensorTest {
 	Vacuum v = new Vacuum("henry");
 	
-	@Test
-	public void testSensors(){
-		for(Sensor s : v.sensorArray){
-			assertEquals(ThingsInRoom.BAREFLOOR,s.sense());
-		}
+	//@Test
+	//public void testSensors(){
+	//	for(Sensor s : v.sensorArray){
+			//assertEquals(ThingsInRoom.BAREFLOOR,s.sense());
+	//	}
 		
 		
 	}
 	
 	
 	
-}
+

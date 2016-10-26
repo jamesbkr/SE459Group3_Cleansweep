@@ -12,8 +12,10 @@ import room.Room;
 import room.RoomStatus;
 import room.ThingsInRoom;
 import simulator.RoomSimulator;
+import swing.SwingAnimatorBuilder;
 import vacuum.*;
 import diagnostics.*;
+import model.Model;
 //Main class to test running the vacuum
 public class RunVacuum {
 
@@ -24,7 +26,7 @@ public class RunVacuum {
 			RoomSimulator rmSim = new RoomSimulator();
 			Scanner scn = new Scanner(System.in);
 			int[] i = {10,10};
-			HashMap<Point,RoomStatus> room = rmSim.makeRoom(i);
+			HashMap<Point,RoomStatus> room = rmSim.makeRoom(i); //goodroom.DEFAULT
 			boolean SS = false;
 			int f = 0;
 			
@@ -40,8 +42,9 @@ public class RunVacuum {
 			
 							case 2:
 								System.out.println("NOTE: if you haven't build a room yet then the default 10X10 room will be used");
-								Vacuum V = new Vacuum("henry",room);
-								V.run();							
+								
+								Model m = new Model(room,new SwingAnimatorBuilder());	
+								m.run();
 								continue;
 							case 3:
 								System.out.println("Good Bye!");

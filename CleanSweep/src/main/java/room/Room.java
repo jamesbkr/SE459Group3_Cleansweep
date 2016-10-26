@@ -24,6 +24,7 @@ public class Room implements Area {
 		this.room = room;
 	}
 	
+
 	
 	//updates the map with the location information
 	public void updateLocation(Point p, RoomStatus rs){
