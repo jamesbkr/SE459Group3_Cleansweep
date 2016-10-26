@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Observable;
 
@@ -8,16 +9,18 @@ import util.Animator;
 import util.AnimatorBuilder;
 import vacuum.Vacuum;
 import room.Point;
+import room.Room;
 import room.RoomStatus;
 
 public class Model extends Observable {
 	Vacuum V;
 	Animator animator;
 	boolean disposed = false;
-	
-	public Model(Vacuum S, AnimatorBuilder builder){
+	ArrayList<Vacuum> Vac = new ArrayList<Vacuum>();
+	public Model( HashMap<Point,RoomStatus> r, AnimatorBuilder builder){
 		
-		this.V = S;
+		this.V = new Vacuum("Henry", r, builder);
+		Vac.add(V);
 		setup(builder, V.getRoom().getRoom());
 		this.animator = builder.getAnimator();
 		super.addObserver(animator);
@@ -29,15 +32,20 @@ public class Model extends Observable {
 	}
 	
 	public void run(){
-		V.run();
-	}
+		do{
+		for (Vacuum v : Vac.toArray(new Vacuum[0])){	
+		v.run();
+		}
+		super.setChanged();
+		super.notifyObservers();
+	}while(true);
+		}
 	
 	private void setup(AnimatorBuilder builder, HashMap<Point,RoomStatus> r){
 		for(Point p : r.keySet()){
 			builder.addLocation(p, r.get(p));
-			
-			
 		}
+		builder.addVacuum(V);
 	}
 
 }

@@ -3,6 +3,7 @@ package util;
 import room.Point;
 import room.RoomStatus;
 import util.Animator;
+import vacuum.Vacuum;
 
 /**
  * An interface for building a {@link Animator} for this {@link Model}.
@@ -16,7 +17,7 @@ public interface AnimatorBuilder {
 	public Animator getAnimator();
 
 	public void addLocation(Point p, RoomStatus rs);
-
+	public void addVacuum(Vacuum v);
 }
 
 /**
@@ -27,6 +28,13 @@ class NullAnimatorBuilder implements AnimatorBuilder {
 
 	@Override
 	public void addLocation(Point p, RoomStatus rs) {}
+
+
+	@Override
+	public void addVacuum(Vacuum v) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

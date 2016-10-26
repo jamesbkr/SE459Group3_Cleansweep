@@ -1,0 +1,46 @@
+package model;
+
+import java.util.HashMap;
+import java.util.Observable;
+
+import swing.SwingAnimatorBuilder;
+import util.Animator;
+import util.AnimatorBuilder;
+import vacuum.Vacuum;
+import room.Point;
+import room.RoomStatus;
+
+public class Model extends Observable {
+	Vacuum V;
+	Animator animator;
+	boolean disposed = false;
+	
+		
+		this.V = new Vacuum("Henry", new HashMap<Point, RoomStatus>(), builder);
+		setup(builder, V.getRoom().getRoom());
+		this.animator = builder.getAnimator();
+		super.addObserver(animator);
+	}
+	
+	public void dispose(){
+		animator.dispose();
+		disposed = true;
+	}
+	
+	public void run(){
+	//	do{
+		V.run();
+		//super.setChanged();
+		//super.notifyObservers();
+	//}while(true);
+		}
+	
+	private void setup(AnimatorBuilder builder, HashMap<Point,RoomStatus> r){
+		for(Point p : r.keySet()){
+			builder.addLocation(p, r.get(p));
+			
+			
+		}
+	}
+
+}

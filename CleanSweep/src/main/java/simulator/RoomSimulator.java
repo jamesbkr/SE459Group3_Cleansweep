@@ -16,7 +16,7 @@ public class RoomSimulator {
 	public HashMap<Point,RoomStatus> makeRoom(int[] input){
 		HashMap<Point,RoomStatus> room = new HashMap<Point,RoomStatus>(); 
 		ThingsInRoom r = ThingsInRoom.BASE ;
-		int count = (input[0]*input[1])/20;
+		int count = 0;//(input[0]*input[1])/20;
 		for(int i=0;i<input[0];i++){
 			for (int j =0;j<input[1];j++){
 				Point p = new Point(i,j);

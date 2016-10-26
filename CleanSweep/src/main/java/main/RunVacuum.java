@@ -41,8 +41,8 @@ public class RunVacuum {
 			
 							case 2:
 								System.out.println("NOTE: if you haven't build a room yet then the default 10X10 room will be used");
-								Vacuum V = new Vacuum("henry",room);
-								Model m = new Model(V, new SwingAnimatorBuilder());	
+								
+								Model m = new Model(room,new SwingAnimatorBuilder());	
 								m.run();
 								continue;
 							case 3:
