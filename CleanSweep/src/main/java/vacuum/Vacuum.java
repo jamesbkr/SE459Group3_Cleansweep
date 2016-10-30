@@ -192,7 +192,7 @@ public class Vacuum  {
 		}
 	// call to pull the list out
 	private LinkedList<Point> returnlist(){
-		
+		System.out.println("Returning to base points linearly:"+"\n"+returnlist);
 		return returnlist;
 	}
 		
