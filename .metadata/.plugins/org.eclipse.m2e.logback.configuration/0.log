@@ -3245,3 +3245,17 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2016-11-07 10:17:20,395 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
 2016-11-07 10:17:25,254 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
 2016-11-07 10:17:25,255 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 10:19:54,355 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:19:54,364 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:19:54,372 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:19:54,374 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:20:20,888 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 10:20:20,890 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2016-11-07 10:20:24,417 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:20:24,417 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:20:24,419 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:20:24,420 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:21:01,288 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:21:01,293 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:21:01,295 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:21:01,296 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources

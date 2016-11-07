@@ -17,7 +17,6 @@ import vacuum.*;
 import diagnostics.*;
 import model.Model;
 //Main class to test running the vacuum
-//testing this commit
 public class RunVacuum {
 
 	public static void main(String[] args) {
