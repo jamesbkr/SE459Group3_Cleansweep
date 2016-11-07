@@ -1,0 +1,108 @@
+package simulator;
+
+import java.util.HashMap;
+import java.util.Random;
+import java.util.Scanner;
+
+import room.CleanRoom;
+import room.Point;
+import room.RoomStatus;
+import room.ThingsInRoom;
+
+
+public class DefaultRooms {
+	
+	
+	
+public HashMap<Point,RoomStatus> makeDefaultRoom(){
+	HashMap<Point,RoomStatus> roomtest1 = new HashMap<Point,RoomStatus>();
+		
+
+	Point a1 = new Point(0,0);
+	Point a2 = new Point(0,1);
+	Point a3 = new Point(0,2);
+	Point a4 = new Point(0,3);
+	Point a5 = new Point(0,4);
+	Point a6 = new Point(1,0);
+	Point a7 = new Point(1,1);
+	Point a8 = new Point(1,2);
+	Point a9 = new Point(1,3);
+	Point a10 = new Point(1,4);
+	Point a11 = new Point(2,0);
+	Point a12 = new Point(2,1);
+	Point a13 = new Point(2,2);
+	Point a14 = new Point(2,3);
+	Point a15 = new Point(2,4);
+	Point a16 = new Point(3,0);
+	Point a17 = new Point(3,1);
+	Point a18 = new Point(3,2);
+	Point a19 = new Point(3,3);
+	Point a20 = new Point(3,4);
+	Point a21 = new Point(4,0);
+	Point a22 = new Point(4,1);
+	Point a23 = new Point(4,2);
+	Point a24 = new Point(4,3);
+	Point a25 = new Point(4,4);
+	
+	
+	RoomStatus b1 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
+	RoomStatus b2 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
+	RoomStatus b3 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
+	RoomStatus b4 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
+	RoomStatus b5 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
+	RoomStatus b6 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b7 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b8 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b9 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b10 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b11 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b12 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b13 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
+	RoomStatus b14 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b15 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
+	RoomStatus b16 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
+	RoomStatus b17 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
+	RoomStatus b18 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
+	RoomStatus b19 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
+	RoomStatus b20 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
+	RoomStatus b21 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
+	RoomStatus b22 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
+	RoomStatus b23 = new RoomStatus(ThingsInRoom.BASE ,CleanRoom.DIRTY);
+	RoomStatus b24 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
+	RoomStatus b25 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
+	
+		roomtest1.put(a1, b1);
+		roomtest1.put(a2, b2);
+		roomtest1.put(a3, b3);
+		roomtest1.put(a4, b4);
+		roomtest1.put(a5, b5);
+		roomtest1.put(a6, b6);
+		roomtest1.put(a7, b7);
+		roomtest1.put(a8, b8);
+		roomtest1.put(a9, b9);
+		roomtest1.put(a10, b10);
+		roomtest1.put(a11, b11);
+		roomtest1.put(a12, b12);
+		roomtest1.put(a13, b13);
+		roomtest1.put(a14, b14);
+		roomtest1.put(a15, b15);
+		roomtest1.put(a16, b16);
+		roomtest1.put(a17, b17);
+		roomtest1.put(a18, b18);
+		roomtest1.put(a19, b19);
+		roomtest1.put(a20, b20);
+		roomtest1.put(a21, b21);
+		roomtest1.put(a22, b22);
+		roomtest1.put(a23, b23);
+		roomtest1.put(a24, b24);
+		roomtest1.put(a25, b25);
+
+		
+		return roomtest1;
+	}
+	
+	
+	
+	
+	
+}

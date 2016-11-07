@@ -22,6 +22,8 @@ public class RunVacuum {
 	public static void main(String[] args) {
 			ArrayList<String> powerLog= new ArrayList<String>();
 			ArrayList<String> storageLog= new ArrayList<String>();
+
+
 			RoomSimulator rmSim = new RoomSimulator();
 			Scanner scn = new Scanner(System.in);
 			int[] i = {10,10};

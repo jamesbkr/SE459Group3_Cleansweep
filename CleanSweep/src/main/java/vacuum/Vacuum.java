@@ -1,13 +1,9 @@
 package vacuum;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Observable;
+import java.util.*;
 
 import util.AnimatorBuilder;
-
 import room.CleanRoom;
 import room.Point;
 
@@ -29,9 +25,14 @@ import sensor.SensorFactory;
 public class Vacuum  {
 	
 	//General variables for the vacuum
+	
+	LinkedList<Point> returnlist= new LinkedList<Point>();
+	
 	int storage = 50;
 	int batteryLife = 100;
 	String name;
+	
+	
 	
 	//The room that is being searched
 	private Room room;
@@ -193,6 +194,8 @@ public class Vacuum  {
 	//this is a recursive function.  
 	private void move(){
 			Point nextPoint = getNextMove(currentLocation);
+			//add returnlist addition for call back.
+			returnlist.add(nextPoint);
 			if(room.getRoom().get(nextPoint).getIsClean().equals(CleanRoom.DIRTY)){
 				currentLocation = nextPoint;
 				this.clean(currentLocation);
@@ -205,6 +208,12 @@ public class Vacuum  {
 
 		
 		}
+	// call to pull the list out
+	public LinkedList<Point> returnlist(){
+		//System.out.println("Total points traveled: "+ returnlist.size());
+		//System.out.println("Returning to base points linearly:"+"\n"+returnlist);
+		return returnlist;
+	}
 		
 	private void clean(Point p){
 		System.out.println("CLEANING "+ p.toString());
