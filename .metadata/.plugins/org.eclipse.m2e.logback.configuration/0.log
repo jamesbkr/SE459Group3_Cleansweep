@@ -3168,3 +3168,80 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2016-11-02 21:05:09,728 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
 2016-11-02 21:05:09,733 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-11-02 21:05:09,734 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 09:49:36,365 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 09:49:36,374 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 09:49:36,378 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 09:49:36,378 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 09:52:51,920 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 09:52:51,936 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 09:57:26,712 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-07 09:57:27,820 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 09:57:27,849 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 09:57:27,853 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 09:57:27,854 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 09:57:30,621 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 09:57:30,621 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 09:59:39,580 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-07 09:59:40,445 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 09:59:40,453 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 09:59:40,458 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 09:59:40,458 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 09:59:42,601 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 09:59:42,601 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 10:01:22,015 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 10:01:22,015 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 10:01:23,368 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:01:23,371 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:01:23,373 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:01:23,374 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:02:45,652 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:02:45,654 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:02:45,656 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:02:45,657 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:03:43,748 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:03:43,750 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:03:43,752 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:03:43,753 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:04:06,824 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:04:06,825 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:04:06,826 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:04:06,827 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:04:42,087 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 10:04:42,087 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 10:07:27,963 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:07:27,972 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:07:27,982 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:07:27,983 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:09:39,262 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 10:09:39,267 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2016-11-07 10:09:43,139 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:09:43,139 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:09:43,144 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:09:43,145 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:11:36,623 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-07 10:11:37,262 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:11:37,264 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:11:37,268 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:11:37,269 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:11:42,613 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-11-07 10:12:06,168 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 10:12:06,169 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 10:12:24,045 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-07 10:12:24,476 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:12:24,477 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:12:24,482 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:12:24,483 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:12:29,728 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 10:12:29,729 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-07 10:16:40,140 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-07 10:16:40,795 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:16:40,801 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:16:40,804 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:16:40,805 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:17:20,151 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-07 10:17:20,384 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:17:20,385 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-07 10:17:20,394 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-07 10:17:20,395 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-07 10:17:25,254 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-07 10:17:25,255 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify

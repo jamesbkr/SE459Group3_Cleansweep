@@ -1,13 +1,9 @@
 package vacuum;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Observable;
+import java.util.*;
 
 import util.AnimatorBuilder;
-
 import room.CleanRoom;
 import room.Point;
 
@@ -29,9 +25,14 @@ import sensor.SensorFactory;
 public class Vacuum  {
 	
 	//General variables for the vacuum
+	
+	LinkedList<Point> returnlist= new LinkedList<Point>();
+	
 	int storage = 50;
 	int batteryLife = 100;
 	String name;
+	
+	
 	
 	//The room that is being searched
 	private Room room;
@@ -39,11 +40,11 @@ public class Vacuum  {
 	Point currentLocation;
 	
 	//Setup the things that the Rumba is aware of in the room.
-	ThingsInRoom front = ThingsInRoom.NOTHING;
+/*	ThingsInRoom front = ThingsInRoom.NOTHING;
 	ThingsInRoom back = ThingsInRoom.NOTHING;
 	ThingsInRoom left = ThingsInRoom.NOTHING;
 	ThingsInRoom right = ThingsInRoom.NOTHING;
-	ThingsInRoom[] thingsArray = {right,left,back,front};
+	ThingsInRoom[] thingsArray = {right,left,back,front};*/
 	
 	ThingsInRoom center = ThingsInRoom.BASE;
 
@@ -129,7 +130,7 @@ public class Vacuum  {
 	private Point getNextMove(Point p){
 		int x = p.getX();
 		int y = p.getY();
-		try{
+	
 		Point left = new Point(x-1,y);
 		Point front = new Point(x,y+1);
 		Point right = new Point(x+1,y);
@@ -187,16 +188,14 @@ public class Vacuum  {
 		}
 		return p;
 	
-	}catch(NullPointerException ex){
-		System.out.println(left.toString());
-		System.out.println(front.toString());
-		System.out.println(right.toString());
-		System.out.println(back.toString());}
+	
 	}
 	// Move the vacuum
 	//this is a recursive function.  
 	private void move(){
 			Point nextPoint = getNextMove(currentLocation);
+			//add returnlist addition for call back.
+			returnlist.add(nextPoint);
 			if(room.getRoom().get(nextPoint).getIsClean().equals(CleanRoom.DIRTY)){
 				currentLocation = nextPoint;
 				this.clean(currentLocation);
@@ -209,6 +208,12 @@ public class Vacuum  {
 
 		
 		}
+	// call to pull the list out
+	public LinkedList<Point> returnlist(){
+		//System.out.println("Total points traveled: "+ returnlist.size());
+		//System.out.println("Returning to base points linearly:"+"\n"+returnlist);
+		return returnlist;
+	}
 		
 	private void clean(Point p){
 		System.out.println("CLEANING "+ p.toString());

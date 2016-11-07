@@ -1,13 +1,9 @@
 package vacuum;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Observable;
+import java.util.*;
 
 import util.AnimatorBuilder;
-
 import room.CleanRoom;
 import room.Point;
 
@@ -29,9 +25,14 @@ import sensor.SensorFactory;
 public class Vacuum  {
 	
 	//General variables for the vacuum
+	
+	LinkedList<Point> returnlist= new LinkedList<Point>();
+	
 	int storage = 50;
 	int batteryLife = 100;
 	String name;
+	
+	
 	
 	//The room that is being searched
 	private Room room;
@@ -129,7 +130,7 @@ public class Vacuum  {
 	private Point getNextMove(Point p){
 		int x = p.getX();
 		int y = p.getY();
-		try{
+	
 		Point left = new Point(x-1,y);
 		Point front = new Point(x,y+1);
 		Point right = new Point(x+1,y);
@@ -187,16 +188,14 @@ public class Vacuum  {
 		}
 		return p;
 	
-	}catch(NullPointerException ex){
-		System.out.println(left.toString());
-		System.out.println(front.toString());
-		System.out.println(right.toString());
-		System.out.println(back.toString());}
-		return p;}
+	
+	}
 	// Move the vacuum
 	//this is a recursive function.  
 	private void move(){
 			Point nextPoint = getNextMove(currentLocation);
+			//add returnlist addition for call back.
+			returnlist.add(nextPoint);
 			if(room.getRoom().get(nextPoint).getIsClean().equals(CleanRoom.DIRTY)){
 				currentLocation = nextPoint;
 				this.clean(currentLocation);
@@ -209,6 +208,12 @@ public class Vacuum  {
 
 		
 		}
+	// call to pull the list out
+	public LinkedList<Point> returnlist(){
+		//System.out.println("Total points traveled: "+ returnlist.size());
+		//System.out.println("Returning to base points linearly:"+"\n"+returnlist);
+		return returnlist;
+	}
 		
 	private void clean(Point p){
 		System.out.println("CLEANING "+ p.toString());
@@ -226,7 +231,7 @@ public class Vacuum  {
 	//Then need to be changed to be induced when the vacuum is running out of battery.
 	public Point returnToBase() {
 		System.out.println("RETURNING TO BASE");
-		System.exit(3);
+		//System.exit(3);
 		return new Point(0,0);
 	}
 	

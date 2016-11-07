@@ -231,7 +231,7 @@ public class Vacuum  {
 	//Then need to be changed to be induced when the vacuum is running out of battery.
 	public Point returnToBase() {
 		System.out.println("RETURNING TO BASE");
-		System.exit(3);
+		//System.exit(3);
 		return new Point(0,0);
 	}
 	
