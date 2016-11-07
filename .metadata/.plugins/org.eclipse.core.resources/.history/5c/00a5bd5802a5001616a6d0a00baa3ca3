@@ -11,7 +11,6 @@ import room.Point;
 import room.Room;
 import room.RoomStatus;
 import room.ThingsInRoom;
-import simulator.DefaultRooms;
 import simulator.RoomSimulator;
 import swing.SwingAnimatorBuilder;
 import vacuum.*;
@@ -25,11 +24,11 @@ public class RunVacuum {
 			ArrayList<String> powerLog= new ArrayList<String>();
 			ArrayList<String> storageLog= new ArrayList<String>();
 
-			DefaultRooms dfRoom = new DefaultRooms();
+
 			RoomSimulator rmSim = new RoomSimulator();
 			Scanner scn = new Scanner(System.in);
 			int[] i = {10,10};
-			HashMap<Point,RoomStatus> room = dfRoom.makeDefaultRoom(); //goodroom.DEFAULT
+			HashMap<Point,RoomStatus> room = rmSim.makeRoom(i); //goodroom.DEFAULT
 			boolean SS = false;
 			int f = 0;
 			

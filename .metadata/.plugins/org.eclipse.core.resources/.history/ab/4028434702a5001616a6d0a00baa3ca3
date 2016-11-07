@@ -12,7 +12,7 @@ import room.ThingsInRoom;
 
 public class DefaultRooms {
 	
-	public DefaultRooms(){};
+	
 	
 public HashMap<Point,RoomStatus> makeDefaultRoom(){
 	HashMap<Point,RoomStatus> roomtest1 = new HashMap<Point,RoomStatus>();
