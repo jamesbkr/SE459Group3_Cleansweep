@@ -2,18 +2,20 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
-<fullyQualifiedTypeName name="room.CleanRoom"/>
 <fullyQualifiedTypeName name="simulator.RoomSimulator"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="room.RoomStatus"/>
 <fullyQualifiedTypeName name="model.Model"/>
-<fullyQualifiedTypeName name="vacuum.Vacuum"/>
 <fullyQualifiedTypeName name="swing.SwingAnimatorBuilder"/>
 <fullyQualifiedTypeName name="util.AnimatorBuilder"/>
 <fullyQualifiedTypeName name="util.Animator"/>
-<fullyQualifiedTypeName name="java.util.Observable"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="room.Point"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="room.ThingsInRoom"/>
+<fullyQualifiedTypeName name="java.util.Observable"/>
+<fullyQualifiedTypeName name="room.Room"/>
+<fullyQualifiedTypeName name="room.CleanRoom"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="vacuum.Vacuum"/>
 </qualifiedTypeNameHistroy>

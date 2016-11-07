@@ -39,7 +39,7 @@ public class Point {
 		if (copy1 == null){
 			throw new NullPointerException("The point was null");
 		}
-		else if( (copy1.x == this.x) &&(copy1.y == this.y)){
+		else if( (copy1.x==this.x) &&(copy1.y==this.y)){
 			return true;
 		}
 		else{
