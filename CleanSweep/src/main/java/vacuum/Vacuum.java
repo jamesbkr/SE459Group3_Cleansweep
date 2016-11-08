@@ -155,7 +155,7 @@ public class Vacuum  {
 			if(a[g]!=null){
 				
 				if(((room.getRoom().get(a[g]).getIsClean().equals(CleanRoom.DIRTY)))&&
-						((!sensorArray[g].sense(a[g]).equals(ThingsInRoom.NOTHING))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.OBSTACLE)))){
+						((!sensorArray[g].sense(a[g]).equals(ThingsInRoom.NOTHING))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.OBSTACLE)))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.BASE)) ){
 					return a[g];
 				}
 			
@@ -165,7 +165,7 @@ public class Vacuum  {
 			if(a[g]!=null){
 				
 				if(((room.getRoom().get(a[g]).getIsClean().equals(CleanRoom.CLEAN)))&&
-						((!sensorArray[g].sense(a[g]).equals(ThingsInRoom.NOTHING))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.OBSTACLE)))){
+						((!sensorArray[g].sense(a[g]).equals(ThingsInRoom.NOTHING))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.OBSTACLE)))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.BASE))    ){
 					return a[g];
 				}
 			

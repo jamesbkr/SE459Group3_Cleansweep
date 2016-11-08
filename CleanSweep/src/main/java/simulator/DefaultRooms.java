@@ -96,6 +96,12 @@ public HashMap<Point,RoomStatus> makeDefaultRoom(){
 		roomtest1.put(a23, b23);
 		roomtest1.put(a24, b24);
 		roomtest1.put(a25, b25);
+		
+		for (int g = 5;g<12;g++){
+			Point x = new Point(g,0);
+			RoomStatus y = new RoomStatus(ThingsInRoom.BAREFLOOR,CleanRoom.DIRTY);
+			roomtest1.put(x,y);
+		}
 
 		
 		return roomtest1;

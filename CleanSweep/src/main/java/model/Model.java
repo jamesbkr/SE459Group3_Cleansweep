@@ -12,7 +12,7 @@ import room.Point;
 import room.Room;
 import room.RoomStatus;
 
-public class Model extends Observable {
+public class Model extends Observable implements Runnable{
 	Vacuum V;
 	Animator animator;
 	boolean disposed = false;

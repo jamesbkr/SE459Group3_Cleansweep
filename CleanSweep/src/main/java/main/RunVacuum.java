@@ -47,7 +47,9 @@ public class RunVacuum {
 								System.out.println("NOTE: if you haven't build a room yet then the default 10X10 room will be used");
 								
 								Model m = new Model(room,new SwingAnimatorBuilder());	
-								m.run();
+								Thread t = new Thread(m);
+								t.start();
+								
 								continue;
 							case 3:
 								System.out.println("Good Bye!");
@@ -66,7 +68,7 @@ public class RunVacuum {
 		do{
 			System.out.println("This is the vacuum simulation");
 			System.out.println("what would you like to do? please select 1, 2, or 3");
-			System.out.println("IF YOU DO NOT GENERATE A ROOM THERE WILL BE A 100X100 ROOM AUTOMATICALLY GENERATED");
+			System.out.println("IF YOU DO NOT GENERATE A ROOM THERE WILL BE A ROOM AUTOMATICALLY GENERATED");
 			System.out.println("1. create room");
 			System.out.println("2. Run simulation");
 			System.out.println("3. exit");

@@ -1,0 +1,8 @@
+package output;
+
+public class Snippet {
+	public static void main(String[] args) {
+		(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.OBSTACLE))
+	}
+}
+
