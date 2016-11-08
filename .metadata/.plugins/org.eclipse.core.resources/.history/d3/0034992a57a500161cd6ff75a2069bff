@@ -38,17 +38,11 @@ public class RoomSimulator {
 					}
 					
 				}
-				if((r==ThingsInRoom.NOTHING)||(r==ThingsInRoom.BASE)||(r==ThingsInRoom.OBSTACLE)){
-				RoomStatus rs = new RoomStatus(r,CleanRoom.CLEAN);
-				room.put(p, rs);
-			}else{
 				RoomStatus rs = new RoomStatus(r,CleanRoom.DIRTY);
+				
 				room.put(p,rs);
 				
 			}
-				
-				
-			}		
 		}
 		return room;
 	}

@@ -61,15 +61,15 @@ public HashMap<Point,RoomStatus> makeDefaultRoom(){
 	RoomStatus b14 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
 	RoomStatus b15 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
 	RoomStatus b16 = new RoomStatus(ThingsInRoom.LOWPILE ,CleanRoom.DIRTY);
-	RoomStatus b17 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.CLEAN);
-	RoomStatus b18 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.CLEAN);
+	RoomStatus b17 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
+	RoomStatus b18 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
 	RoomStatus b19 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
 	RoomStatus b20 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
 	RoomStatus b21 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
 	RoomStatus b22 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
-	RoomStatus b23 = new RoomStatus(ThingsInRoom.NOTHING ,CleanRoom.CLEAN);
-	RoomStatus b24 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.CLEAN);
-	RoomStatus b25 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.CLEAN);
+	RoomStatus b23 = new RoomStatus(ThingsInRoom.NOTHING ,CleanRoom.DIRTY);
+	RoomStatus b24 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
+	RoomStatus b25 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
 	
 		roomtest1.put(a1, b1);
 		roomtest1.put(a2, b2);
