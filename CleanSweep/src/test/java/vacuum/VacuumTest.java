@@ -15,12 +15,12 @@ public class VacuumTest {
 		assertEquals(p,v.getCurrentLocation());	
 	}
 	
-	@Test
+/*	@Test
 	public void testReturn(){
 		
 		assertEquals(p,v.returnToBase());
 	}
-	
+	*/
 	@Test
 	public void testShutdown(){
 		

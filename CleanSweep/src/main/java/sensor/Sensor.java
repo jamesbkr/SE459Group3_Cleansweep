@@ -12,8 +12,14 @@ public class Sensor {
 		
 	}
 	
-	public ThingsInRoom sense(Point p) throws NullPointerException{
+	public ThingsInRoom sense(Point p) {
+		
+		try{
 		System.out.println(room.getRoom().get(p).getTypeOfFloor()+ " :::" + p.toString());
+		}catch(Exception e){
+			
+			System.out.println("ERROR SENSING THE TYPE OF FLOOR");
+		}
 		return room.getRoom().get(p).getTypeOfFloor();
 		
 	};

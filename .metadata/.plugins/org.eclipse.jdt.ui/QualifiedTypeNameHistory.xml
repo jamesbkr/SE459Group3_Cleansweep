@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="util.AnimatorBuilder"/>
 <fullyQualifiedTypeName name="util.Animator"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="room.ThingsInRoom"/>
 <fullyQualifiedTypeName name="java.util.Observable"/>
 <fullyQualifiedTypeName name="room.Room"/>
@@ -18,4 +17,6 @@
 <fullyQualifiedTypeName name="vacuum.Vacuum"/>
 <fullyQualifiedTypeName name="simulator.RoomSimulator"/>
 <fullyQualifiedTypeName name="room.Point"/>
+<fullyQualifiedTypeName name="simulator.DefaultRooms"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

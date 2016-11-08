@@ -67,7 +67,7 @@ public HashMap<Point,RoomStatus> makeDefaultRoom(){
 	RoomStatus b20 = new RoomStatus(ThingsInRoom.BAREFLOOR ,CleanRoom.DIRTY);
 	RoomStatus b21 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
 	RoomStatus b22 = new RoomStatus(ThingsInRoom.HIGHPILE ,CleanRoom.DIRTY);
-	RoomStatus b23 = new RoomStatus(ThingsInRoom.BASE ,CleanRoom.DIRTY);
+	RoomStatus b23 = new RoomStatus(ThingsInRoom.NOTHING ,CleanRoom.DIRTY);
 	RoomStatus b24 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
 	RoomStatus b25 = new RoomStatus(ThingsInRoom.OBSTACLE ,CleanRoom.DIRTY);
 	

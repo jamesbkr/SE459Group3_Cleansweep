@@ -5,7 +5,60 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-11-03T17:48:00Z</updated>
+  <updated>2016-11-07T22:20:30Z</updated>
+  <entry>
+    <title>Spring Security OAuth 2.0.12 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/11/07/spring-security-oauth-2-0-12-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Joe Grandja</name>
+    </author>
+    <id>tag:spring.io,2016-11-07:2683</id>
+    <updated>2016-11-07T22:20:30Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community, I&amp;#8217;m pleased to announce the release of Spring Security OAuth 2.0.12.RELEASE. The release can be found in our &lt;a href="http://repo.spring.io/release"&gt;Spring Release repository&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Corg.springframework.security.oauth"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release primarily includes bug fixes and minor enhancements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="contributions" class="sect0"&gt;&lt;a class="anchor" href="#contributions"&gt;&lt;/a&gt;Contributions&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Without the community we couldn&amp;#8217;t be the successful project we are today. I&amp;#8217;d like to thank everyone that created issues &amp;amp; provided feedback.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="feedback-please" class="sect0"&gt;&lt;a class="anchor" href="#feedback-please"&gt;&lt;/a&gt;Feedback Please&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you have feedback on this release, I encourage you to reach out via &lt;a href="http://stackoverflow.com/questions/tagged/spring-security-oauth2"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security-oauth/issues"&gt;GitHub
+Issues&lt;/a&gt; or via the comments section. You can also ping me Joe &lt;a href="https://twitter.com/joe_grandja"&gt;@joe_grandja&lt;/a&gt;, Dave &lt;a href="https://twitter.com/david_syer"&gt;@david_syer&lt;/a&gt; or Rob &lt;a href="https://twitter.com/rob_winch"&gt;@rob_winch&lt;/a&gt; on Twitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security-oauth/"&gt;Project Site&lt;/a&gt; |
+&lt;a href="http://projects.spring.io/spring-security-oauth/docs/Home.html"&gt;Reference&lt;/a&gt;
+| &lt;a href="http://stackoverflow.com/questions/tagged/spring-security-oauth2"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Task 1.1.0.RC1 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/11/07/spring-cloud-task-1-1-0-rc1-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Glenn Renfro</name>
+    </author>
+    <id>tag:spring.io,2016-11-07:2684</id>
+    <updated>2016-11-07T22:17:07Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring Cloud Task 1.1.0.RC1 is now available via Github and the Pivotal download repository. Many thanks to all of those who contributed to this release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-cloud-task-1-1-0-offers-the-following-features" class="anchor" name="spring-cloud-task-1-1-0-offers-the-following-features"&gt;&lt;/a&gt;Spring Cloud Task 1.1.0 offers the following features:&lt;/h2&gt;
+&lt;p&gt;This release continues to progress on 1.1.0&amp;rsquo;s main theme of improving overall task functionality as well as migrating features that existed within Spring XD to Spring Cloud Task. The feature set for 1.1.0 includes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Updated error message handling&lt;/em&gt; - 1.1.0 adds a new column to the &lt;code&gt;TASK_EXECUTION&lt;/code&gt; table, &lt;code&gt;ERROR_MESSAGE&lt;/code&gt;. This new column will be where any exception that is thrown causing the failure of a task to be recorded (this is changed from the &lt;code&gt;EXIT_MESSAGE&lt;/code&gt; field in previous versions). This change allows for the &lt;code&gt;EXIT_MESSAGE&lt;/code&gt; field to be better utilized for orchestration of tasks.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Improved options for customizing the launch of partitioned job workers&lt;/em&gt; - When using the &lt;code&gt;DeployerPartitionHandler&lt;/code&gt;, 1.1.0 now provides abstractions around customizing the environment variables and command line arguments on a per partition basis.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Support for external execution id&lt;/em&gt; - When executing a task on a PaaS or other cloud infrastructure, there is typically a mapping that needs to occur between the task&amp;rsquo;s execution id and the id provided by the underlying system. This feature provides the ability to correlate those two for things like log management, audit, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Support externalized task execution recording&lt;/em&gt; - This capability goes along with the support for an external execution id in that this allows the launching system to record a task execution&amp;rsquo;s existence prior to it&amp;rsquo;s start.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;DB2 Support&lt;/em&gt; - Thanks to community for adding the DB2 support for Task Repository.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Partition Job Samples&lt;/em&gt; - Checkout the updated partitioned batch-job sample and the updated instructions on how to orchestrate them as short-lived Tasks in Local, Cloud Foundry, Mesos, YARN and Kubernetes.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-next" class="anchor" name="what-rsquo-s-next"&gt;&lt;/a&gt;What&amp;rsquo;s next&lt;/h2&gt;
+&lt;p&gt;Spring Cloud Task 1.1.0 is expected to be GA next week with Spring Cloud Data Flow 1.1.0. Spring Cloud Task is considered to be feature complete, and the time between RC and GA we will be hardening the release for GA.&lt;/p&gt;
+&lt;p&gt;We look forward to your feedback on these new features in &lt;a href="https://github.com/spring-cloud/spring-cloud-task/issues"&gt;Github&lt;/a&gt;, &lt;a href="http://stackoverflow.com/tags/spring-cloud-task"&gt;StackOverflow&lt;/a&gt;, or to me directly via Twitter &lt;a href="https://twitter.com/michaelminella"&gt;@michaelminella&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-task/"&gt;Spring Cloud Task Home&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-task"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-cloud-task/current/reference/htmlsingle/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data release train Hopper SR5 released</title>
     <link rel="alternate" href="https://spring.io/blog/2016/11/03/spring-data-release-train-hopper-sr5-released" />
@@ -931,46 +984,5 @@ history dragged along with you, don&amp;#8217;t you?&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - October 18, 2016</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/10/18/this-week-in-spring-october-18-2016" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2016-10-18:2658</id>
-    <updated>2016-10-18T07:21:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s been another crazy wonderful week. This week I&amp;rsquo;m in London and Cambridge, UK visiting with customers and speaking (in particular, at the O&amp;rsquo;Reilly &lt;a href="http://conferences.oreilly.com/software-architecture/engineering-business-eu"&gt;&lt;strong&gt;Software Architecture Conference&lt;/strong&gt;&lt;/a&gt;) If you&amp;rsquo;re about be sure to say hi! Now then, let&amp;rsquo;s get to it!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The Spring Cloud Services Team, led by &lt;a href="https://www.twitter.com/csterwa"&gt;Chris Sterling&lt;/a&gt; has just finished making Eureka Service Discovery work even better on Pivotal Cloud Foundry. The &lt;a href="https://blog.pivotal.io/pivotal-cloud-foundry/products/new-in-spring-cloud-services-1-2-multi-site-service-discovery"&gt;new 1.2 release&lt;/a&gt; allows peer replication across installations and organizations, enabling multi-site replication.&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Data Flow 1.1.M2 just released today, picking up Boot 1.4.1 and Spring Cloud Camden releases. Check out all the extra goodies in &lt;a href="https://spring.io/blog/2016/10/18/spring-cloud-data-flow-1-1-m2-released"&gt;Mark Pollack&amp;rsquo;s blog post&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Learn how to build data-centric microservices &lt;a href="http://spring.io/blog/2016/10/17/webinar-replay-data-microservices-in-the-cloud"&gt;with Spring Cloud Data Flow with this incredible webinar&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Integration ninja Artem Bilan has just &lt;a href="http://spring.io/blog/2016/10/14/java-dsl-for-spring-integration-1-2-release-is-available"&gt;announced the Java DSL for Spring Integration 1.2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Last week I put together a quick look - another installment in the &lt;em&gt;Spring Tips&lt;/em&gt; series! - at how &lt;a href="http://spring.io/blog/2016/10/13/spring-tips-a-gentle-introduction-to-spring-integration"&gt;to build application integration flows with Spring Integration&lt;/a&gt; (and the aforementioned Java DSL!). Enjoy.&lt;/li&gt;
-  &lt;li&gt;I really liked this InfoQ article Edith Harbaugh on &lt;a href="https://www.infoq.com/articles/feature-flags-gone-wrong"&gt;the perils and potential of feature flags in a system&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Are you on macOS Sierra and having trouble with scrolling in IntelliJ IDEA? &lt;a href="https://youtrack.jetbrains.com/oauth?state=%2FissueMobile%2FIDEA-158500"&gt;Check out this &lt;em&gt;super useful&lt;/em&gt; tip&lt;/a&gt; for a workaround!&lt;/li&gt;
-  &lt;li&gt;I liked this article on &lt;a href="https://dzone.com/articles/the-java-8-api-design-principles"&gt;design principles when building APIs with Java 8&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want to see what the future of reactive Spring Security looks like? &lt;a href="https://github.com/spring-projects/spring-security-reactive"&gt;Follow along this repository as the Spring Security team starts work&lt;/a&gt; but, &lt;em&gt;please&lt;/em&gt;, mind the dust!&lt;/li&gt;
-  &lt;li&gt;Volkswagen, yet another car company that &lt;em&gt;gets it&lt;/em&gt;, &lt;a href="http://www.computerworlduk.com/cloud-computing/volkswagen-continues-open-source-cloud-push-with-cloud-foundry-paas-3646928/"&gt;has chosen Pivotal Cloud Foundry to reduce cycle time&lt;/a&gt; from the order of years to down to a week (and I wouldn&amp;rsquo;t be surprised if they could get that down further!)&lt;/li&gt;
-  &lt;li&gt;our pal, Michael Simmons, has put together a great &lt;a href="http://info.michael-simons.eu/2016/10/13/spring-boot-referencing-mockbeans-by-name/"&gt;post on referencing &lt;code&gt;@MockBean&lt;/code&gt;s by name in a Spring test&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Are you in Japan? &lt;a href="http://springday2016.springframework.jp/"&gt;Don&amp;rsquo;t miss this Spring Days event!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data lead Oliver Gierke put together a nice post on &lt;a href="http://olivergierke.de/2016/10/evolving-distributed-systems/"&gt;the tradeoffs of building an evolvable system&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Jonas Hecht has posted yet another installment in his series looking at how to work with CXF and Spring, this time debuting a &lt;a href="https://blog.codecentric.de/en/2016/10/spring-boot-apache-cxf-spring-boot-starter/"&gt;good-looking Spring Boot auto-configuration and starter that simplifies things &lt;em&gt;considerably&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;ZeroTurnaround have &lt;a href="https://zeroturnaround.com/rebellabs/spring-vs-java-ee-survey-results/"&gt;posted a remix of their data from a recent survey&lt;/a&gt; of the Java community, this time breaking down use of different technologies - Spring and Java EE - from among survey participants.&lt;/li&gt;
-  &lt;li&gt;TheNewStack is back at it again, this time with a post called &lt;a href="http://thenewstack.io/embracing-pragmatism-software-development/"&gt;&lt;em&gt;Cloud Foundry Remains King over a Changing Platform Landscape&lt;/em&gt;&lt;/a&gt;. Interesting analysis!&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Webinar Replay: Data Microservices in the Cloud</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/10/17/webinar-replay-data-microservices-in-the-cloud" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2016-10-18:2657</id>
-    <updated>2016-10-17T17:27:00Z</updated>
-    <content type="html">&lt;p&gt;Speakers: Mark Pollack, Mark Fisher&lt;br/&gt;Spring Cloud Data Flow enables you to create data pipelines for many common use-cases such as data ingestion, real-time analytics and data import/export.&lt;br/&gt;In this webinar, we will introduce Spring Cloud Data Flow’s architecture and walk through the orchestration capabilities of long-running and short-lived data-centric applications on multiple runtime platforms such as Cloud Foundry, Kubernetes, Apache Mesos and Apache YARN.&lt;br/&gt;Spring Cloud Data Flow represents the evolution of Spring XD and retains the DSL to define data pipelines as well as the web based UI designer, but changes the component model from modules that used to run inside a container to standard Spring Boot applications built with Spring Cloud Stream and Spring Cloud Task APIs.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/eMK6ttCmkKE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>

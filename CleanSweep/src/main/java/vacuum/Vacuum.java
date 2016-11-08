@@ -65,13 +65,14 @@ public class Vacuum  {
 		
 		currentLocation = new Point(0,0);
 		this.getRoom().updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
-		
+		returnlist.add(currentLocation);
 
 		sensorBuilder = new SensorFactory();
 		rightSensor = sensorBuilder.buildFrontSensor(this.getRoom());
 		leftSensor = sensorBuilder.buildLeftSensor(this.getRoom());
 		backSensor = sensorBuilder.buildBackSensor(this.getRoom());
 		frontSensor = sensorBuilder.buildFrontSensor(this.getRoom());	
+		this.sensorArray = new Sensor[]{leftSensor, frontSensor, rightSensor, backSensor};
 	}
 	
 	//constructor
@@ -80,7 +81,7 @@ public class Vacuum  {
 		this.setRoom(new Room());
 		currentLocation = new Point(0,0);
 		getRoom().updateLocation(currentLocation, new RoomStatus(ThingsInRoom.BASE,CleanRoom.CLEAN));
-		
+		returnlist.add(currentLocation);
 		
 /*		for(Point p : room.getRoom().keySet()){
 			room.updateLocation(p, new RoomStatus(ThingsInRoom.NOTHING, ThingsInRoom.DIRTY));		
@@ -96,6 +97,8 @@ public class Vacuum  {
 		                              leftSensor , 
 		                              backSensor, 
 		                              frontSensor} ;
+	
+		
 	}
 	
 	
@@ -135,11 +138,6 @@ public class Vacuum  {
 		Point front = new Point(x,y+1);
 		Point right = new Point(x+1,y);
 		Point back = new Point(x,y-1);
-		System.out.println(left.toString());
-		System.out.println(front.toString());
-		System.out.println(right.toString());
-		System.out.println(back.toString());
-		
 		if(!room.getRoom().containsKey(left)){
 			left = null;
 		}
@@ -152,44 +150,83 @@ public class Vacuum  {
 		if(!room.getRoom().containsKey(back)){
 			back = null;
 		}
-		if((left!=null)&&((room.getRoom().get(left).getIsClean().equals(CleanRoom.DIRTY)))&&
+		Point [] a  = {left,front,right,back};
+		for(int g=0;g<a.length;g++){
+			if(a[g]!=null){
+				
+				if(((room.getRoom().get(a[g]).getIsClean().equals(CleanRoom.DIRTY)))&&
+						((!sensorArray[g].sense(a[g]).equals(ThingsInRoom.NOTHING))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.OBSTACLE)))){
+					return a[g];
+				}
+			
+		}
+		}
+		for(int g=0;g<a.length;g++){
+			if(a[g]!=null){
+				
+				if(((room.getRoom().get(a[g]).getIsClean().equals(CleanRoom.CLEAN)))&&
+						((!sensorArray[g].sense(a[g]).equals(ThingsInRoom.NOTHING))&&(!sensorArray[g].sense(a[g]).equals(ThingsInRoom.OBSTACLE)))){
+					return a[g];
+				}
+			
+		}}
+		
+		return p;
+	/*	
+		if(!room.getRoom().containsKey(left)){
+			left = null;
+		}
+		if(!room.getRoom().containsKey(right)){
+			right = null;
+		}
+		if(!room.getRoom().containsKey(front)){
+			front = null;
+		}
+		if(!room.getRoom().containsKey(back)){
+			back = null;
+		}*/
+/*		System.out.println(left.toString() + " |" + right.toString()+ " | "+ front.toString()+ " | "+back.toString());
+		
+		
+		
+		if((room.getRoom().containsKey(left))&&((room.getRoom().get(left).getIsClean().equals(CleanRoom.DIRTY)))&&
 							((!leftSensor.sense(left).equals(ThingsInRoom.NOTHING))&&(!leftSensor.sense(left).equals(ThingsInRoom.OBSTACLE)))){
 			return left;
-		}else if ((front!=null)&&((room.getRoom().get(front).getIsClean().equals(CleanRoom.DIRTY)))&&
+		}else if ((room.getRoom().containsKey(front))&&((room.getRoom().get(front).getIsClean().equals(CleanRoom.DIRTY)))&&
 							(!(frontSensor.sense(front).equals(ThingsInRoom.NOTHING))&&(frontSensor.sense(front)!=ThingsInRoom.OBSTACLE))){
 			return front;
-		}else if ((right!=null)&&((room.getRoom().get(right).getIsClean().equals(CleanRoom.DIRTY)))&&
+		}else if ((room.getRoom().containsKey(right))&&((room.getRoom().get(right).getIsClean().equals(CleanRoom.DIRTY)))&&
 							(!(rightSensor.sense(right).equals(ThingsInRoom.NOTHING))&&(!(rightSensor.sense(right).equals(ThingsInRoom.OBSTACLE))))){
 			return right;
-		}else if ((back!=null)&&((room.getRoom().get(back).getIsClean().equals(CleanRoom.DIRTY)))&&
+		}else if ((room.getRoom().containsKey(back))&&((room.getRoom().get(back).getIsClean().equals(CleanRoom.DIRTY)))&&
 							(!(backSensor.sense(back).equals(ThingsInRoom.NOTHING))&&(!(backSensor.sense(back).equals(ThingsInRoom.OBSTACLE))))){
 			return back;
-		}else if((left!=null)&&((room.getRoom().get(left).getIsClean().equals(CleanRoom.CLEAN)))&&
+		}else if((room.getRoom().containsKey(left))&&((room.getRoom().get(left).getIsClean().equals(CleanRoom.CLEAN)))&&
 							(!(leftSensor.sense(left).equals(ThingsInRoom.NOTHING))&&(!(leftSensor.sense(left).equals(ThingsInRoom.OBSTACLE))))){
 			return left;
-		}else if((front!=null)&&((room.getRoom().get(front).getIsClean().equals(CleanRoom.CLEAN)))&&
+		}else if((room.getRoom().containsKey(front))&&((room.getRoom().get(front).getIsClean().equals(CleanRoom.CLEAN)))&&
 							(!(frontSensor.sense(left).equals(ThingsInRoom.NOTHING))&&(!(frontSensor.sense(left).equals(ThingsInRoom.OBSTACLE))))){
 			return front;
-		}else if((right!=null)&&((room.getRoom().get(right).getIsClean().equals(CleanRoom.CLEAN)))&&
+		}else if((room.getRoom().containsKey(right))&&((room.getRoom().get(right).getIsClean().equals(CleanRoom.CLEAN)))&&
 							(!(rightSensor.sense(right).equals(ThingsInRoom.NOTHING))&&(!(rightSensor.sense(right).equals(ThingsInRoom.OBSTACLE))))){
 			return right;
-		}else if((back!=null)&&((room.getRoom().get(back).getIsClean().equals(CleanRoom.CLEAN)))&&
+		}else if((room.getRoom().containsKey(back))&&((room.getRoom().get(back).getIsClean().equals(CleanRoom.CLEAN)))&&
 							(!(backSensor.sense(back).equals(ThingsInRoom.NOTHING))&&(!(backSensor.sense(back).equals(ThingsInRoom.OBSTACLE))))){
 			return back;
 		}
 		else{
-			if((leftSensor.sense(back)==ThingsInRoom.NOTHING)||(leftSensor.sense(back)==ThingsInRoom.OBSTACLE)&&
+			/*if((leftSensor.sense(back)==ThingsInRoom.NOTHING)||(leftSensor.sense(back)==ThingsInRoom.OBSTACLE)&&
 					(frontSensor.sense(left)==ThingsInRoom.NOTHING)||(frontSensor.sense(left)==ThingsInRoom.OBSTACLE)&&
 					(rightSensor.sense(right)==ThingsInRoom.NOTHING)||(rightSensor.sense(right)==ThingsInRoom.OBSTACLE)&&
-					(backSensor.sense(front)==ThingsInRoom.NOTHING)||(backSensor.sense(front)==ThingsInRoom.OBSTACLE)){
-								this.shutDown(p);
-			}
-			else{this.returnToBase();}
+					(backSensor.sense(front)==ThingsInRoom.NOTHING)||(backSensor.sense(front)==ThingsInRoom.OBSTACLE)){*/
+								//this.shutDown(p);
+			//}
+			//else{this.returnToBase();}*/
 		}
-		return p;
+		//return p;
 	
 	
-	}
+//	}
 	// Move the vacuum
 	//this is a recursive function.  
 	private void move(){
@@ -201,6 +238,12 @@ public class Vacuum  {
 				this.clean(currentLocation);
 				//this.move();
 			}else{
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				currentLocation = nextPoint;
 				//this.move();
 			}
@@ -229,15 +272,18 @@ public class Vacuum  {
 	
 	//Return to base function.  This will be called when the vacuum is filled.  
 	//Then need to be changed to be induced when the vacuum is running out of battery.
-	public Point returnToBase() {
+	public void returnToBase() {
 		System.out.println("RETURNING TO BASE");
 		//System.exit(3);
-		return new Point(0,0);
+		this.shutDown(this.getCurrentLocation());
+		
 	}
 	
 	
 	public Point shutDown(Point p){
 		System.out.println("THERE IS NO WHER TO GO>   SHUTTING DOWN at location " +p.toString());
+		
+		System.exit(4);
 		return p;
 	}
 	
