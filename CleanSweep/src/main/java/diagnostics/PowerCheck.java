@@ -19,7 +19,7 @@ public class PowerCheck {
 	//Left over tokens from other idea
 	//Basically 0 for good to go, 1 for no charge left, and 2 for complete error
 	public static String PowerCheck(Vacuum vacuumSource){
-		int batterylife = vacuumSource.checkBatteryLife();
+		Float batterylife = vacuumSource.checkBatteryLife();
 		String activityHolder;
 		//Integer token = 0;
 		if (batterylife==100){
