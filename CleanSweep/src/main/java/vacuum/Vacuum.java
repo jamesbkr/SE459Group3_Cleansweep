@@ -3,7 +3,6 @@ package vacuum;
 
 import java.util.*;
 
-import sun.tools.tree.ThisExpression;
 import util.AnimatorBuilder;
 import room.CleanRoom;
 import room.Point;
