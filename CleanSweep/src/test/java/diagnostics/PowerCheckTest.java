@@ -15,8 +15,8 @@ public class PowerCheckTest {
 	
 	public void testPowerCheck(){
 		Float holder=v.checkBatteryLife();
-		String testholder1= PowerCheck.PowerCheck(v);
-		String testholder2= PowerCheck.PowerCheck(v2);
+		String testholder1= PowerCheck.checkPower(v);
+		String testholder2= PowerCheck.checkPower(v2);
 		
 		assertEquals(testholder1,testholder2);
 	}

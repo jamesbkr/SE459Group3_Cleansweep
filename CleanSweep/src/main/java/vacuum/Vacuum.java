@@ -3,6 +3,9 @@ package vacuum;
 
 import java.util.*;
 
+import diagnostics.MoveCheck;
+import diagnostics.PowerCheck;
+import diagnostics.StorageCheck;
 import util.AnimatorBuilder;
 import room.CleanRoom;
 import room.Point;
@@ -214,6 +217,9 @@ public class Vacuum {
         if (!returnlist.isEmpty()) {
             Point lastPoint = returnlist.removeLast();
             if(lastPoint != currentLocation) {
+                MoveCheck.checkmovement(this);
+                PowerCheck.checkPower(this);
+                StorageCheck.Diagnostic(this);
                 consumeBatteryForMovement(currentLocation, lastPoint, true);
             }
             System.out.println("PowerRemaining:" + batteryLife);
@@ -236,6 +242,8 @@ public class Vacuum {
         {
             return;
         }
+
+
         if (batteryNeededToGetBackToBase >= batteryLife -3) {
             goBackToBase();
             return;
@@ -246,6 +254,9 @@ public class Vacuum {
         consumeBatteryForMovement(currentLocation, nextPoint);
         //add returnlist addition for call back.
         returnlist.add(nextPoint);
+        MoveCheck.checkmovement(this);
+        PowerCheck.checkPower(this);
+        StorageCheck.Diagnostic(this);
         if (room.getRoom().get(nextPoint).getIsClean().equals(CleanRoom.DIRTY)) {
             currentLocation = nextPoint;
             this.clean(currentLocation);

@@ -18,29 +18,25 @@ public class PowerCheck {
 	
 	//Left over tokens from other idea
 	//Basically 0 for good to go, 1 for no charge left, and 2 for complete error
-	public static String PowerCheck(Vacuum vacuumSource){
+	public static String checkPower(Vacuum vacuumSource){
 		Float batterylife = vacuumSource.checkBatteryLife();
 		String activityHolder;
 		//Integer token = 0;
 		if (batterylife==100){
-			System.out.println( "Battery Fully Charged: "+ batterylife+"%") ;	
 			activityHolder= "Battery Fully Charged: "+ batterylife+"%";
 			writeToFile(LOGGER_FILE_NAME, activityHolder);
 			//token= 0;
 		}else if (batterylife==0){
-			System.out.println( "Please Charge : Battery Empty: "+ batterylife+"%" );
 			activityHolder= "Please Charge : Battery Empty: "+ batterylife+"%" ;
 			writeToFile(LOGGER_FILE_NAME, activityHolder);
 			//token= 1;
 			//Create a recharge token? to prompt returning to recharge base
 		}else if (batterylife<0){
-			System.out.println( "Error Batterylife at " + batterylife);
 			activityHolder= "Error Batterylife at " + batterylife;
 			writeToFile(LOGGER_FILE_NAME, activityHolder);
 			//token= 2;
 			// Do we actually want to add an error throw or anything of the like.
 		}else{
-			System.out.println("Battery at: "+ batterylife);
 			activityHolder="Battery at: "+ batterylife;
 			writeToFile(LOGGER_FILE_NAME, activityHolder);
 		}

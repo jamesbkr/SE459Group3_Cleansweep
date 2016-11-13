@@ -61,7 +61,6 @@ public class StorageCheck {
 			fw = new FileWriter(outputFile.getPath(), true);
 			bw = new BufferedWriter(fw);
 
-			System.out.println(msg);
 			bw.write(msg);
 			bw.write(System.getProperty("line.separator"));
 		} catch (IOException e) {

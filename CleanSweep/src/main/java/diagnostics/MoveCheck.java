@@ -15,13 +15,15 @@ public class MoveCheck {
 	
 	private static final String LOGGER_FILE_NAME = "logger.txt";
 	
-	public MoveCheck checkmovement(Vacuum vacuumSource){
+	public static MoveCheck checkmovement(Vacuum vacuumSource){
 		
 		Point thecurrentlocation= vacuumSource.getCurrentLocation();
 		//Point secondpoint= getNextMove(thecurrentlocation);
 		//Need to call a move?
 		LinkedList<Point> returnlist= vacuumSource.returnlist();
-		Point lastpoint= returnlist.getLast();
+		Point lastpoint = null;
+		if(!returnlist.isEmpty())
+			lastpoint= returnlist.getLast();
 		
 		if (thecurrentlocation == lastpoint){
 			String msg = "Error: new location is equal to "+lastpoint;
@@ -54,7 +56,6 @@ public class MoveCheck {
 			fw = new FileWriter(outputFile.getPath(), true);
 			bw = new BufferedWriter(fw);
 
-			System.out.println(msg);
 			bw.write(msg);
 			bw.write(System.getProperty("line.separator"));
 		} catch (IOException e) {
