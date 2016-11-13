@@ -14,7 +14,7 @@ public class PowerCheckTest {
 	Vacuum v2= new Vacuum("harry2");
 	
 	public void testPowerCheck(){
-		int holder=v.checkBatteryLife();
+		Float holder=v.checkBatteryLife();
 		String testholder1= PowerCheck.PowerCheck(v);
 		String testholder2= PowerCheck.PowerCheck(v2);
 		

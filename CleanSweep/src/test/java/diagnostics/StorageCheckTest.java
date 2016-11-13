@@ -10,7 +10,7 @@ public class StorageCheckTest {
 	Vacuum v2= new Vacuum("harry2");
 	
 	public void testStorageCheck(){
-		int holder=v.checkBatteryLife();
+		Float holder=v.checkBatteryLife();
 		String testholder1= StorageCheck.Diagnostic(v);
 		String testholder2= StorageCheck.Diagnostic(v2);
 		

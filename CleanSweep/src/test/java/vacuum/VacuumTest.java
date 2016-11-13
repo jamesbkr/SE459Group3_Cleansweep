@@ -31,9 +31,9 @@ public class VacuumTest {
 	
 	@Test 
 	public void storageCheck(){
-		assertEquals(100,v.checkBatteryLife());
+		assertEquals(100,v.checkBatteryLife().doubleValue(),0);
 		v.batteryLife -= 1;
-		assertEquals(99,v.checkBatteryLife());
+		assertEquals(99,v.checkBatteryLife().doubleValue(),0);
 		
 	}
 	
