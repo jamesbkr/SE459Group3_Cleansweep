@@ -1,0 +1,327 @@
+New point valid: [0,0]
+Battery Fully Charged: 100.0%
+Storage Capacity Left: 50
+New point valid: [0,0]
+Battery at: 99.5
+Storage Capacity Left: 50
+New point valid: [0,1]
+Battery at: 98.5
+Storage Capacity Left: 50
+New point valid: [0,2]
+Battery at: 97.5
+Storage Capacity Left: 50
+New point valid: [0,3]
+Battery at: 96.5
+Storage Capacity Left: 50
+New point valid: [0,4]
+Battery at: 95.0
+Storage Capacity Left: 50
+New point valid: [1,4]
+Battery at: 92.5
+Storage Capacity Left: 50
+New point valid: [2,4]
+Battery at: 90.5
+Storage Capacity Left: 50
+New point valid: [3,4]
+Battery at: 89.5
+Storage Capacity Left: 50
+New point valid: [3,3]
+Battery at: 88.0
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 86.0
+Storage Capacity Left: 50
+New point valid: [1,3]
+Battery at: 84.0
+Storage Capacity Left: 50
+New point valid: [1,2]
+Battery at: 81.5
+Storage Capacity Left: 50
+New point valid: [2,2]
+Battery at: 79.0
+Storage Capacity Left: 50
+New point valid: [2,1]
+Battery at: 77.0
+Storage Capacity Left: 50
+New point valid: [1,1]
+Battery at: 75.0
+Storage Capacity Left: 50
+New point valid: [1,0]
+Battery at: 73.0
+Storage Capacity Left: 50
+New point valid: [2,0]
+Battery at: 71.0
+Storage Capacity Left: 50
+New point valid: [3,0]
+Battery at: 68.5
+Storage Capacity Left: 50
+New point valid: [4,0]
+Battery at: 65.5
+Storage Capacity Left: 50
+New point valid: [4,1]
+Battery at: 62.5
+Storage Capacity Left: 50
+New point valid: [4,0]
+Battery at: 60.5
+Storage Capacity Left: 50
+New point valid: [5,0]
+Battery at: 59.5
+Storage Capacity Left: 50
+New point valid: [6,0]
+Battery at: 58.5
+Storage Capacity Left: 50
+New point valid: [7,0]
+Battery at: 57.5
+Storage Capacity Left: 50
+New point valid: [8,0]
+Battery at: 56.5
+Storage Capacity Left: 50
+New point valid: [9,0]
+Battery at: 55.5
+Storage Capacity Left: 50
+New point valid: [10,0]
+Battery at: 54.5
+Storage Capacity Left: 50
+New point valid: [11,0]
+Battery at: 53.5
+Storage Capacity Left: 50
+New point valid: [10,0]
+Battery at: 52.5
+Storage Capacity Left: 50
+New point valid: [9,0]
+Battery at: 51.5
+Storage Capacity Left: 50
+New point valid: [8,0]
+Battery at: 51.5
+Storage Capacity Left: 50
+New point valid: [9,0]
+Battery at: 50.5
+Storage Capacity Left: 50
+New point valid: [10,0]
+Battery at: 49.5
+Storage Capacity Left: 50
+New point valid: [11,0]
+Battery at: 48.5
+Storage Capacity Left: 50
+New point valid: [10,0]
+Battery at: 47.5
+Storage Capacity Left: 50
+New point valid: [9,0]
+Battery at: 46.5
+Storage Capacity Left: 50
+New point valid: [8,0]
+Battery at: 45.5
+Storage Capacity Left: 50
+New point valid: [7,0]
+Battery at: 44.5
+Storage Capacity Left: 50
+New point valid: [6,0]
+Battery at: 43.5
+Storage Capacity Left: 50
+New point valid: [5,0]
+Battery at: 42.5
+Storage Capacity Left: 50
+New point valid: [4,0]
+Battery at: 40.5
+Storage Capacity Left: 50
+New point valid: [4,1]
+Battery at: 37.5
+Storage Capacity Left: 50
+New point valid: [4,0]
+Battery at: 34.5
+Storage Capacity Left: 50
+New point valid: [3,0]
+Battery at: 32.0
+Storage Capacity Left: 50
+New point valid: [2,0]
+Battery at: 30.0
+Storage Capacity Left: 50
+New point valid: [1,0]
+Battery at: 28.0
+Storage Capacity Left: 50
+New point valid: [1,1]
+Battery at: 26.0
+Storage Capacity Left: 50
+New point valid: [2,1]
+Battery at: 24.0
+Storage Capacity Left: 50
+New point valid: [2,2]
+Battery at: 21.5
+Storage Capacity Left: 50
+New point valid: [1,2]
+Battery at: 19.0
+Storage Capacity Left: 50
+New point valid: [1,3]
+Battery at: 17.0
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 15.0
+Storage Capacity Left: 50
+New point valid: [3,3]
+Battery at: 13.5
+Storage Capacity Left: 50
+New point valid: [3,4]
+Battery at: 12.5
+Storage Capacity Left: 50
+New point valid: [2,4]
+Battery at: 10.5
+Storage Capacity Left: 50
+New point valid: [1,4]
+Battery at: 8.0
+Storage Capacity Left: 50
+New point valid: [0,4]
+Battery at: 6.5
+Storage Capacity Left: 50
+New point valid: [0,3]
+Battery at: 5.5
+Storage Capacity Left: 50
+New point valid: [0,2]
+Battery at: 4.5
+Storage Capacity Left: 50
+New point valid: [0,1]
+Battery at: 3.5
+Storage Capacity Left: 50
+New point valid: [0,0]
+Battery at: 98.5
+Storage Capacity Left: 50
+New point valid: [0,1]
+Battery at: 96.5
+Storage Capacity Left: 50
+New point valid: [1,1]
+Battery at: 94.5
+Storage Capacity Left: 50
+New point valid: [1,2]
+Battery at: 92.0
+Storage Capacity Left: 50
+New point valid: [1,3]
+Battery at: 90.0
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 88.5
+Storage Capacity Left: 50
+New point valid: [2,4]
+Battery at: 87.0
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 85.0
+Storage Capacity Left: 50
+New point valid: [3,3]
+Battery at: 83.0
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 80.5
+Storage Capacity Left: 50
+New point valid: [2,2]
+Battery at: 77.5
+Storage Capacity Left: 50
+New point valid: [2,1]
+Battery at: 75.5
+Storage Capacity Left: 50
+New point valid: [3,1]
+Battery at: 73.5
+Storage Capacity Left: 50
+New point valid: [4,1]
+Battery at: 71.0
+Storage Capacity Left: 50
+New point valid: [4,2]
+Battery at: 69.0
+Storage Capacity Left: 50
+New point valid: [5,2]
+Battery at: 67.5
+Storage Capacity Left: 50
+New point valid: [5,3]
+Battery at: 66.5
+Storage Capacity Left: 50
+New point valid: [6,3]
+Battery at: 65.0
+Storage Capacity Left: 50
+New point valid: [6,4]
+Battery at: 62.5
+Storage Capacity Left: 50
+New point valid: [6,5]
+Battery at: 60.0
+Storage Capacity Left: 50
+New point valid: [5,5]
+Battery at: 58.0
+Storage Capacity Left: 50
+New point valid: [4,5]
+Battery at: 55.5
+Storage Capacity Left: 50
+New point valid: [3,5]
+Battery at: 53.5
+Storage Capacity Left: 50
+New point valid: [3,6]
+Battery at: 51.5
+Storage Capacity Left: 50
+New point valid: [2,6]
+Battery at: 51.5
+Storage Capacity Left: 50
+New point valid: [3,6]
+Battery at: 49.5
+Storage Capacity Left: 50
+New point valid: [3,5]
+Battery at: 47.5
+Storage Capacity Left: 50
+New point valid: [4,5]
+Battery at: 45.0
+Storage Capacity Left: 50
+New point valid: [5,5]
+Battery at: 43.0
+Storage Capacity Left: 50
+New point valid: [6,5]
+Battery at: 40.5
+Storage Capacity Left: 50
+New point valid: [6,4]
+Battery at: 38.0
+Storage Capacity Left: 50
+New point valid: [6,3]
+Battery at: 36.5
+Storage Capacity Left: 50
+New point valid: [5,3]
+Battery at: 35.5
+Storage Capacity Left: 50
+New point valid: [5,2]
+Battery at: 34.0
+Storage Capacity Left: 50
+New point valid: [4,2]
+Battery at: 32.0
+Storage Capacity Left: 50
+New point valid: [4,1]
+Battery at: 29.5
+Storage Capacity Left: 50
+New point valid: [3,1]
+Battery at: 27.5
+Storage Capacity Left: 50
+New point valid: [2,1]
+Battery at: 25.5
+Storage Capacity Left: 50
+New point valid: [2,2]
+Battery at: 22.5
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 20.0
+Storage Capacity Left: 50
+New point valid: [3,3]
+Battery at: 18.0
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 16.0
+Storage Capacity Left: 50
+New point valid: [2,4]
+Battery at: 14.5
+Storage Capacity Left: 50
+New point valid: [2,3]
+Battery at: 13.0
+Storage Capacity Left: 50
+New point valid: [1,3]
+Battery at: 11.0
+Storage Capacity Left: 50
+New point valid: [1,2]
+Battery at: 8.5
+Storage Capacity Left: 50
+New point valid: [1,1]
+Battery at: 6.5
+Storage Capacity Left: 50
+New point valid: [0,1]
+Battery at: 4.5
+Storage Capacity Left: 50

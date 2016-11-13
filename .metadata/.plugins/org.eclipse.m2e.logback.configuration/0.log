@@ -3562,3 +3562,35 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2016-11-07 21:38:16,726 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
 2016-11-07 21:38:16,729 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-11-07 21:38:16,732 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-12 07:55:41,424 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-12 07:55:41,473 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-12 07:55:41,484 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-12 07:55:41,486 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-12 08:02:37,357 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-12 08:02:38,328 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-12 08:02:38,344 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-12 08:02:38,351 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-12 08:02:38,353 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-12 08:02:44,774 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-12 08:02:44,776 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-12 08:03:43,454 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-12 08:03:43,461 [Worker-23] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/tools/1.6/tools-1.6.pom
+2016-11-12 08:03:43,466 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun:tools:jar:1.6 is missing, no dependency information available
+2016-11-12 08:03:43,475 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun:tools:jar:1.6 is missing, no dependency information available
+2016-11-12 08:03:43,743 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/tools/1.6/tools-1.6.jar
+2016-11-12 08:03:43,952 [Worker-23] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/tools/1.6/tools-1.6.jar
+2016-11-12 08:03:48,373 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-12 08:03:48,374 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
+2016-11-12 08:12:05,449 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun:tools:jar:1.6 is missing, no dependency information available
+2016-11-13 11:34:55,377 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun:tools:jar:1.6 is missing, no dependency information available
+2016-11-13 11:35:34,197 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.SE459Group3:CleanSweep:0.0.1 @ /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/pom.xml.
+2016-11-13 11:35:35,050 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-13 11:35:35,051 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-13 11:35:35,065 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-13 11:35:35,065 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-13 11:35:40,490 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-13 11:35:40,494 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/main/resources
+2016-11-13 11:35:40,506 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-13 11:35:40,506 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep/src/test/resources
+2016-11-13 11:35:43,748 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/jbecker/Documents/SE459/SE459Group3_Cleansweep-master/CleanSweep
+2016-11-13 11:35:43,750 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean verify
