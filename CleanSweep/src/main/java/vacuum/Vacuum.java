@@ -180,7 +180,7 @@ public class Vacuum {
 
     }
 
-    private Float getBatteryRequiredForFloorType(ThingsInRoom floorType) {
+    public Float getBatteryRequiredForFloorType(ThingsInRoom floorType) {
         if (floorType.equals(ThingsInRoom.BAREFLOOR)) {
             return 1F;
         } else if (floorType.equals(ThingsInRoom.LOWPILE)) {
@@ -213,7 +213,7 @@ public class Vacuum {
         consumeBatteryForMovement(currentLocation, nextPoint, false);
     }
 
-    private void goBackToBase() {
+    public void goBackToBase() {
         if (!returnlist.isEmpty()) {
             Point lastPoint = returnlist.removeLast();
             if(lastPoint != currentLocation) {
